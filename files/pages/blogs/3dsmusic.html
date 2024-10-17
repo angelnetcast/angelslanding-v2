@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Angel Valentine" />
+		<meta name="description" content="ANGEL'S LANDING v1.5 - .BSCTM TO .WAV" />
+		<meta name="keywords" content="Cute, Purple" />
+		<link href="/style.css" rel="stylesheet" />
+		<title>ANGEL'S LANDING v1.5 - .BSCTM TO .WAV</title>
+	</head>
+
+	<body>
+		<h1>How To Get Music From a 3DS Game</h1>
+		<h3>(Or just decrypt 3DS roms in general)</h3>
+		<p>
+			<b>Disclaimer: </b>This guide is mostly for me so I remember what I did to
+			replicate it later, but I’m deciding to post it because I had a hell of a
+			time trying to figure it out in the first place. With that in mind, please
+			exercise caution if you try this out! Since it’s for me, the guide is written
+			as if you have some base idea of what you’re doing. I can try to help with
+			anything if you email me, but if you break something I’m not responsible. ^^”
+			Read everything through first, then follow the guide!
+		</p>
+		<p>
+			This is a combination of multiple guides I used to get to this point, so I
+			will link the originals in order in case you want to go to the source
+			material. They have beginner-friendly step-by-step instructions.
+		</p>
+		<ul>
+			<li>
+				<a href="https://3ds.hacks.guide/dumping-titles-and-game-cartridges"
+					>Dumping Titles and Game Cartridges - 3DS Hacks Guide</a
+				>
+			</li>
+			<li>
+				<a
+					href="https://regginator729.wordpress.com/2018/12/29/dump-models-textures-3ds/"
+					>Dumping Models and Textures (RomFS) from the Nintendo 3DS</a
+				>
+			</li>
+		</ul>
+		<p>
+			<mark
+				>TLDR: This is formatted so I can remember what I did. If you only need a
+				refresher, this is for you! Otherwise, it may be better to use the links
+				above for more guided instruction. (unless you're confident. in which case
+				go ahead.¯\_(ツ)_/¯)</mark
+			>
+			<br />
+			<i
+				><a
+					href="https://docs.google.com/document/d/1LcFLEEyNemJRr1cA2X1zeH9ROPbOT9-o_iMOpCE38Gw/edit?usp=sharing"
+					>Google Docs version if this is hard to read.</a
+				></i
+			>
+		</p>
+
+		<h2>What you Need</h2>
+		<ul>
+			<li>
+				A modded 3DS to dump the game file <i>or</i> .3ds/.cia file of your desired
+				game
+			</li>
+			<li><a href="https://vgmstream.org/">vgmstream</a></li>
+			<li><a href="https://github.com/3DSGuy/Project_CTR/releases">CTRTool</a></li>
+		</ul>
+		<p>
+			I did this on a laptop running Windows 11. You will need to use the command
+			line with this method.
+		</p>
+
+		<h2>Guide</h2>
+
+		<h3>Part 1: Dumping a ROM</h3>
+		<p>
+			Getting the game files from your physical 3DS cart! You can get them from
+			home menu software too, but I’m not including that because I haven’t gotten
+			it to work.
+			<a
+				href="https://3ds.hacks.guide/dumping-titles-and-game-cartridges#dumping-an-installed-title"
+				>Check the 3DS hacks guide for more info on dumping installed software</a
+			>. <mark>If you already have your game file, move on to part 2.</mark>
+		</p>
+
+		<ol>
+			<li>Launch GodMode9</li>
+			<li>Go to [C:] GAMECART</li>
+			<li>Select the .trim.3ds file option</li>
+			<li>Copy to 0:/gm9/out</li>
+			<li>Power off your system and put your SD card into your computer</li>
+			<li>
+				Navigate to /gm9/out on the SD and copy the .trim.3ds file to your desired
+				location
+			</li>
+		</ol>
+
+		<h3>Part 2: Decrypting the ROM</h3>
+		<p>
+			This decrypts the game file to show the contents. Doesn’t work for .nds
+			files, but does work for .cia or .3ds.
+			<mark
+				>Note that CTRTool only works on x64-bit OS, you can find out if you have
+				this in your system settings.</mark
+			>
+		</p>
+		<ol>
+			<li>Download CTRTool</li>
+			<li>
+				Unzip the download and move ctrtool.exe to the same folder path as your game
+				file
+			</li>
+			<li>
+				Rename the game file to the name of your game (or whatever you want, this
+				just makes it easier to type into the command line)
+			</li>
+			<li>Right-click in file explorer and hit open in terminal</li>
+			<li>Run this command</li>
+			<ul>
+				<li><b>.3ds:</b> ctrtool.exe --romfsdir=romfs GAMENAMEHERE.3ds</li>
+				<ul>
+					<li>
+						If you get a “Windows does not run from current location” error, add .\ in
+						front of the command.
+					</li>
+				</ul>
+				<li>
+					<b>.cia:</b> ctrtool.exe --contents=contents game.cia then ctrtool.exe
+					--romfsdir=romfs contents.0000.00000000
+				</li>
+				<ul>
+					<li>
+						For some reason, you can also do this by changing the file extension from
+						the first command .3ds to .cia. ¯\_(ツ)_/¯
+					</li>
+				</ul>
+			</ul>
+			<li>Your game gets exported to a folder with all the files! All done!</li>
+		</ol>
+
+		<h3>Part 3: Converting .bcstm to .wav</h3>
+		<p>
+			Let's get that music you’ve been waiting for in a format the silly little
+			computer likes to read!
+		</p>
+
+		<ol>
+			<li>Download vgmstream</li>
+			<li>Unzip the folder and put it somewhere safe</li>
+			<li>Go to where your .bcstm file is</li>
+			<ul>
+				<li>
+					If you just decrypted the rom, most games have their music in /sound/stream
+				</li>
+			</ul>
+			<li>
+				Select your desired file and drag it to hover over the vgmstream-cli.exe
+				file
+			</li>
+			<li>
+				When the popup option says open with vgmstream-cli.exe, let go and the
+				program will run the conversion
+			</li>
+			<li>
+				Go back to where you dragged your .bcstm file from and look for your new
+				.wav file
+			</li>
+			<li>Play the .wav in your desired music player!</li>
+		</ol>
+
+		<p>
+			Want to read all the other stuff in the folders? Check out
+			<a href="https://github.com/PabloMK7/EveryFileExplorer/releases/tag/1.11"
+				>EveryFileExplorer</a
+			>
+			or
+			<a
+				href="https://www.gamebrew.org/wiki/Ohana3DS_Rebirth#:~:text=Ohana3DS%20is%20a%20tool%20used,%2C%20Textures%2C%20even%20some%20animations."
+				>Ohana3DS Rebirth</a
+			>. You can email me about this too, but I can’t promise I’ll be much help!
+			^^”
+		</p>
+		<p><a href="/pages/blog.html">BACK?</a></p>
+	</body>
+</html>

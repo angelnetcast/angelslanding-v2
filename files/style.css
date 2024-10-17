@@ -1,0 +1,141 @@
+/* ---------------------------- universal stylesheet ---------------------------- */
+
+/* -------------- colors -------------- */
+:root {
+	/* ----- purples ----- */
+	--dark: #2301a9;
+	--mediumdark: #3810d1;
+	--medium: #9985e8;
+	--mediumlight: #b6a8ef;
+	--light: #d6cef6;
+	/* ----- grayscale ----- */
+	--black: #171717;
+	--pure: #ffffff;
+}
+
+/* -------------- emphasis -------------- */
+mark {
+	background-color: #d6cef6;
+	color: var(--black);
+}
+
+b {
+	color: var(--medium);
+}
+
+u {
+	text-decoration-style: wavy;
+	text-decoration-color: var(--medium);
+}
+
+blockquote {
+	border-left: 15px solid black;
+}
+
+/* -------------- links -------------- */
+a {
+	text-decoration-style: dotted;
+}
+
+a:link {
+	color: var(--mediumlight);
+}
+
+a:visited {
+	color: var(--light);
+}
+
+a:hover {
+	color: var(--dark);
+	cursor: url("/media/images/favicons/sparklecursor.gif"), auto;
+}
+
+/* -------------- decoration -------------- */
+
+/* ----- highlighted text ----- */
+::selection {
+	color: var(--dark);
+	background: var(--light);
+}
+
+/* ----- spoilers ----- */
+.spoiler {
+	color: var(--light);
+	background: var(--light);
+}
+
+:hover.spoiler {
+	color: var(--light);
+	background: var(--black);
+}
+
+/* ----- list bullets ----- */
+ul {
+	list-style-type: disc;
+}
+
+ul > ul {
+	list-style-type: circle;
+}
+
+/* ----- heading colors ----- */
+h1 {
+	color: var(--pure);
+}
+
+h2 {
+	color: var(--medium);
+}
+
+h3 {
+	color: var(--mediumlight);
+}
+
+/* ----- tables ----- */
+table,
+th,
+td {
+	border: 1px solid;
+	padding: 5px;
+	border-collapse: collapse;
+}
+
+/* ----- title ----- */
+/* style-my-tootltips plugin, tooltip styling */
+#s-m-t-tooltip {
+	/* basic */
+	max-width: 300px;
+	z-index: 10;
+	margin: 24px 14px 7px 12px;
+	/* style and design */
+	padding: 8px;
+	background: var(--light);
+	/* fallback if rgba not supported */
+	background: #d6cef6eb;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	/*
+  -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
+  */
+	/* font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	color: var(--mediumdark);
+}
+
+.caption {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-color: var(--medium);
+}
+
+/* -------------- main layout -------------- */
+html {
+	background-color: var(--black);
+	color: var(--light);
+	font-family: Arial, Helvetica, sans-serif;
+}
