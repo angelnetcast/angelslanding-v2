@@ -1,7 +1,8 @@
 /* ---------------------------- home stylesheet ---------------------------- */
 /* -------------- grid -------------- */
+/* -- container -- */
+
 .grid-cont {
-  /* - stands for grid container */
   display: grid;
   grid-template-areas:
     "banner banner banner banner banner"
@@ -9,17 +10,21 @@
     "welcome welcome clock clock music"
     "welcome welcome calendar calendar nav"
     "updates updates to-do to-do nav"
-    "featuredp featuredp featureds poll stats"
-    "featuredp featuredp featureds poll buttons"
-    'footer footer footer footer footer';
+    "featured featured featureds poll stats"
+    "featured featured featureds poll buttons"
+    "footer footer footer footer footer";
 
   padding: 10px;
 }
 
+/* -- all sections -- */
+
 .grid-sec {
-  /* - stands for grid section */
   border: 1px white solid;
+  padding: 10px;
 }
+
+/* -- indv sections -- */
 
 #g1 {
   grid-area: banner;
@@ -49,7 +54,7 @@
   grid-area: to-do;
 }
 #g10 {
-  grid-area: featuredp;
+  grid-area: featured;
 }
 #g11 {
   grid-area: featureds;
