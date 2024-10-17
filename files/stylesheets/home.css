@@ -1,0 +1,68 @@
+/* ---------------------------- home stylesheet ---------------------------- */
+/* -------------- grid -------------- */
+.grid-cont {
+  /* - stands for grid container */
+  display: grid;
+  grid-template-areas:
+    "banner banner banner banner banner"
+    "blurb blurb blurb blurb music"
+    "welcome welcome clock clock music"
+    "welcome welcome calendar calendar nav"
+    "updates updates to-do to-do nav"
+    "featuredp featuredp featureds poll stats"
+    "featuredp featuredp featureds poll buttons"
+    'footer footer footer footer footer';
+
+  padding: 10px;
+}
+
+.grid-sec {
+  /* - stands for grid section */
+  border: 1px white solid;
+}
+
+#g1 {
+  grid-area: banner;
+}
+#g2 {
+  grid-area: blurb;
+}
+#g3 {
+  grid-area: music;
+}
+#g4 {
+  grid-area: welcome;
+}
+#g5 {
+  grid-area: clock;
+}
+#g6 {
+  grid-area: calendar;
+}
+#g7 {
+  grid-area: nav;
+}
+#g8 {
+  grid-area: updates;
+}
+#g9 {
+  grid-area: to-do;
+}
+#g10 {
+  grid-area: featuredp;
+}
+#g11 {
+  grid-area: featureds;
+}
+#g12 {
+  grid-area: poll;
+}
+#g13 {
+  grid-area: stats;
+}
+#g14 {
+  grid-area: buttons;
+}
+#g15 {
+  grid-area: footer;
+}
