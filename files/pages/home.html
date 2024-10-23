@@ -10,7 +10,8 @@
     <title>ANGEL'S LANDING v1.5 - HOME</title>
   </head>
 
-  <body>
+  <body onload="startTime()">
+    <!-- the onload thing is for the clock -->
     <div class="grid-cont">
       <!-- banner -->
       <div class="grid-sec" id="g1">banner</div>
@@ -30,7 +31,9 @@
       </div>
 
       <!-- clock -->
-      <div class="grid-sec" id="g5">clock</div>
+      <div class="grid-sec" id="g5">
+        <div id="clock"></div>
+      </div>
 
       <!-- calendar -->
       <div class="grid-sec" id="g6">calendar</div>
@@ -71,8 +74,10 @@
         <p>this one >:p</p>
       </div>
 
-      <!-- song of the moment -->
-      <div class="grid-sec" id="g11">sotm</div>
+      <!-- song/album of the moment -->
+      <div class="grid-sec" id="g11">
+        <h1>featured album</h1>
+      </div>
 
       <!-- poll -->
       <div class="grid-sec" id="g12">poll</div>
@@ -89,7 +94,7 @@
         </p>
         <p>
           current visitors:
-		  <!-- FC2 Counter  Starts here -->
+          <!-- FC2 Counter  Starts here -->
           <script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=39812842&main=1"></script>
           <noscript><img src="//counter1.fc2.com/counter_now.php?id=39812842&main=1" /></noscript>
           <!-- FC2 Counter  Ends here -->
@@ -116,4 +121,25 @@
       </footer>
     </div>
   </body>
+
+  <!-- clock script (source: https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock) -->
+  <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      } // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
 </html>
