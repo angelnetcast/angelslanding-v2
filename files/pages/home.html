@@ -7,6 +7,8 @@
     <meta name="keywords" content="Cute, Purple" />
     <link href="/style.css" rel="stylesheet" />
     <link href="/stylesheets/home.css" rel="stylesheet" />
+    <link href="/stylesheets/snippets/musicplayer.css" rel="stylesheet" />
+
     <title>ANGEL'S LANDING v1.5 - HOME</title>
   </head>
 
@@ -24,7 +26,37 @@
       </div>
 
       <!-- music player -->
-      <div class="grid-sec" id="g3">music</div>
+      <div class="grid-sec" id="g3">
+        <div id="musicplayer">
+          <div>
+              <marquee scrollamount="8" class="songtitle"></marquee>
+          </div>
+
+          <table class="controls">
+              <tr>
+                  <td>
+                      <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
+                  </td>
+                  <td>
+                      <div class="playpause-track" onclick="playpauseTrack()" ><i class="fas fa-play"></i></div>
+                  </td>
+                  <td>
+                      <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
+                  </td>
+              </tr>
+          </table>
+
+          <div class="seeking">
+              <div class="current-time">00:00</div>
+
+              <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+
+              <div class="total-duration">0:00</div>
+          </div>
+
+          <audio id="music" src=""></audio> 
+      </div>
+      </div>
 
       <!-- welcome message -->
       <div class="grid-sec" id="g4">
@@ -184,6 +216,11 @@
 
   <!-- clock -->
   <script src="/scripts/clock.js"></script>
+
+  <!-- music player -->
+  <script src="/scripts/musicplayer.js"></script>
+  <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+  <!-- add this to the head!! -->
 
   <!-- tooltips -->
   <script src="/scripts/tooltips.js"></script>
