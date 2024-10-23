@@ -36,7 +36,10 @@
       </div>
 
       <!-- calendar -->
-      <div class="grid-sec" id="g6">calendar</div>
+      <div class="grid-sec" id="g6">
+        <!-- calendar script captioned bc it fucks up the grid???? fix l8r -->
+        <!-- <script src="/scripts/calendar.js"></script> -->
+      </div>
 
       <!-- navlinks -->
       <div class="grid-sec" id="g7">
@@ -57,9 +60,9 @@
       <!-- updates -->
       <div class="grid-sec" id="g8">
         <h1>updates</h1>
-		<p>10-23-24: added</p>
+        <p>10-23-24: added</p>
 
-		<p>10-21-24: added fc2 counters</p>
+        <p>10-21-24: added fc2 counters</p>
         <p>10-17-24: the new grid is made (and probs not actually published)</p>
       </div>
 
@@ -124,25 +127,19 @@
       </footer>
     </div>
   </body>
+  <!-- scripts  -->
 
-  <!-- clock script (source: https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock) -->
+  <!-- clock -->
+  <script src="/scripts/clock.js"></script>
+
+  <!-- tooltips -->
+  <script src="/scripts/tooltips.js"></script>
+
   <script>
-    function startTime() {
-      const today = new Date();
-      let h = today.getHours();
-      let m = today.getMinutes();
-      let s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
-      setTimeout(startTime, 1000);
-    }
-
-    function checkTime(i) {
-      if (i < 10) {
-        i = "0" + i;
-      } // add zero in front of numbers < 10
-      return i;
-    }
+    (function ($) {
+      $(document).ready(function () {
+        $("[title]").style_my_tooltips();
+      });
+    })(jQuery);
   </script>
 </html>
