@@ -14,9 +14,9 @@ body{
   grid-template-areas:
     "banner banner banner banner banner"
     "blurb blurb blurb blurb music"
-    "welcome welcome clock clock music"
-    "welcome welcome calendar calendar nav"
-    "updates updates to-do to-do nav"
+    "welcome welcome welcome clock music"
+    "welcome welcome welcome calendar nav"
+    "updates updates updates to-do nav"
     "featured featured featureds poll stats"
     "featured featured featureds poll buttons"
     "footer footer footer footer footer";
