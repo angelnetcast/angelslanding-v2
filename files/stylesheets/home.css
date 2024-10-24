@@ -1,83 +1,98 @@
 /* ---------------------------- home stylesheet ---------------------------- */
-/* -------------- page -------------- */
-body{
-    width: 900px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+
+/* -------------- colors -------------- */
+
+:root {
+	/* ----- purples ----- */
+	--dark: #2301a9;
+	--mediumdark: #3810d1;
+	--medium: #9985e8;
+	--mediumlight: #b6a8ef;
+	--light: #d6cef6;
+	/* ----- grayscale ----- */
+	--black: #171717;
+	--white: #ffffff;
 }
+
+/* -------------- page -------------- */
+
+body {
+	width: 900px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* -------------- grid -------------- */
+
 /* -- container -- */
-
 .grid-cont {
-  display: grid;
-  grid-template-areas:
-    "banner banner banner banner banner"
-    "blurb blurb blurb blurb music"
-    "welcome welcome welcome clock music"
-    "welcome welcome welcome calendar nav"
-    "updates updates updates to-do nav"
-    "featureds featureds featured featured nav"
-    "featureds featureds poll poll stats"
-    "featureds featureds poll poll buttons"
-    "footer footer footer footer footer";
+	display: grid;
+	grid-template-areas:
+		"banner banner banner banner banner"
+		"blurb blurb blurb blurb music"
+		"welcome welcome welcome clock music"
+		"welcome welcome welcome calendar nav"
+		"updates updates updates to-do nav"
+		"featureds featureds featured featured nav"
+		"featureds featureds poll poll stats"
+		"featureds featureds poll poll buttons"
+		"footer footer footer footer footer";
 
-  padding: 10px;
+	padding: 10px;
 }
 
 /* -- all sections -- */
-
 .grid-sec {
-  border: 1px white solid;
-  padding: 10px;
-  margin: 5px;
+	border: 1px var(--white) solid;
+	padding: 10px;
+	margin: 5px;
 }
 
-/* -- indv sections -- */
-
+/* -- indvidual sections -- */
 #g1 {
-  grid-area: banner;
+	grid-area: banner;
 }
 #g2 {
-  grid-area: blurb;
+	grid-area: blurb;
 }
 #g3 {
-  grid-area: music;
+	grid-area: music;
 }
 #g4 {
-  grid-area: welcome;
+	grid-area: welcome;
 }
 #g5 {
-  grid-area: clock;
+	grid-area: clock;
 }
 #g6 {
-  grid-area: calendar;
+	grid-area: calendar;
 }
 #g7 {
-  grid-area: nav;
+	grid-area: nav;
 }
 #g8 {
-  grid-area: updates;
+	grid-area: updates;
 }
 #g9 {
-  grid-area: to-do;
+	grid-area: to-do;
 }
 #g10 {
-  grid-area: featured;
+	grid-area: featured;
 }
 #g11 {
-  grid-area: featureds;
+	grid-area: featureds;
 }
 #g12 {
-  grid-area: poll;
+	grid-area: poll;
 }
 #g13 {
-  grid-area: stats;
+	grid-area: stats;
 }
 #g14 {
-  grid-area: buttons;
+	grid-area: buttons;
 }
 #g15 {
-  grid-area: footer;
-  text-align: center;
+	grid-area: footer;
+	text-align: center;
 }

@@ -10,7 +10,7 @@
 	--light: #d6cef6;
 	/* ----- grayscale ----- */
 	--black: #171717;
-	--pure: #ffffff;
+	--white: #ffffff;
 }
 
 /* -------------- emphasis -------------- */
@@ -80,7 +80,7 @@ ul > ul {
 
 /* ----- heading colors ----- */
 h1 {
-	color: var(--pure);
+	color: var(--white);
 }
 
 h2 {
