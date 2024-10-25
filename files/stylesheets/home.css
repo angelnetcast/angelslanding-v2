@@ -1,10 +1,10 @@
 /* ---------------------------- home stylesheet ---------------------------- */
 /* -------------- page -------------- */
-body{
-    width: 900px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+body {
+  width: 900px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* -------------- grid -------------- */
 /* -- container -- */
@@ -15,6 +15,7 @@ body{
     "banner banner banner banner banner"
     "blurb blurb blurb blurb music"
     "welcome welcome welcome clock music"
+    "welcome welcome welcome calendar music"
     "welcome welcome welcome calendar nav"
     "updates updates updates to-do nav"
     "featureds featureds featured featured nav"
@@ -40,9 +41,11 @@ body{
 }
 #g2 {
   grid-area: blurb;
+  height: 15px;
 }
 #g3 {
   grid-area: music;
+  text-align: center;
 }
 #g4 {
   grid-area: welcome;
