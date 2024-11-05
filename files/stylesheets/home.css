@@ -72,6 +72,8 @@ body {
 }
 #g5 {
 	grid-area: clock;
+	text-align: center;
+	font-size: 25px;
 }
 #g6 {
 	grid-area: calendar;
