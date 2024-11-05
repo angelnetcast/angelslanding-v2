@@ -92,6 +92,7 @@ body {
 }
 #g11 {
 	grid-area: featureds;
+	text-align: center;
 }
 #g12 {
 	grid-area: poll;
