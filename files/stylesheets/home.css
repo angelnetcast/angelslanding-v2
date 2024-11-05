@@ -15,36 +15,42 @@
 }
 
 /* -------------- page -------------- */
+html {
+	background-image: url(/assets/images/backgrounds/grid.png);
+	/* animation: background 12s infinite linear; sometimes i comment this bc the moving background kills my laptop live preview. if ur snoopin in the code and see this off, remind me 2 turn it back on lol */
+}
 body {
-  width: 900px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+	background-color: var(--black);
+	width: 950px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* -------------- grid -------------- */
 
 /* -- container -- */
 .grid-cont {
-  display: grid;
-  grid-template-areas:
-    "banner banner banner banner banner"
-    "blurb blurb blurb blurb music"
-    "welcome welcome welcome clock music"
-    "welcome welcome welcome calendar music"
-    "welcome welcome welcome calendar nav"
-    "updates updates updates to-do nav"
-    "featureds featureds featured featured nav"
-    "featureds featureds poll poll stats"
-    "featureds featureds poll poll buttons"
-    "footer footer footer footer footer";
+	display: grid;
+	grid-template-areas:
+		"banner banner banner banner banner"
+		"blurb blurb blurb blurb music"
+		"welcome welcome welcome clock music"
+		"welcome welcome welcome calendar music"
+		"welcome welcome welcome calendar nav"
+		"updates updates updates to-do nav"
+		"featureds featureds featured featured nav"
+		"featureds featureds poll poll stats"
+		"featureds featureds poll poll buttons"
+		"footer footer footer footer footer";
 
 	padding: 10px;
 }
 
 /* -- all sections -- */
 .grid-sec {
-	border: 1px var(--white) solid;
+	background-color: var(--black);
+	border: 2px var(--white) solid;
 	padding: 10px;
 	margin: 5px;
 }
@@ -54,12 +60,12 @@ body {
 	grid-area: banner;
 }
 #g2 {
-  grid-area: blurb;
-  height: 15px;
+	grid-area: blurb;
+	height: 15px;
 }
 #g3 {
-  grid-area: music;
-  text-align: center;
+	grid-area: music;
+	text-align: center;
 }
 #g4 {
 	grid-area: welcome;
@@ -97,4 +103,13 @@ body {
 #g15 {
 	grid-area: footer;
 	text-align: center;
+}
+
+@keyframes background {
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: 307px 133px;
+	}
 }
