@@ -147,4 +147,5 @@ html {
 	color: var(--light);
 	font-family: nds;
 	font-size: 20px;
+	line-height: 1;
 }
