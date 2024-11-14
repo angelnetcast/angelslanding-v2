@@ -31,7 +31,13 @@ body {
 /* -- container -- */
 .grid-cont {
 	display: grid;
-	grid-template-areas: "nav content content";
+	grid-template-areas:
+		"intro intro buttons buttons"
+		"webrings webrings sites sites"
+		"codelinks codelinks graphics graphics"
+		"codehelp codehelp graphics graphics"
+		"games games artlinks consoles"
+		"games games misc consoles";
 	padding: 10px;
 }
 
@@ -52,31 +58,34 @@ body {
 	grid-area: buttons;
 }
 #g3 {
-	grid-area: content;
+	grid-area: webrings;
+	height: 350px;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 #g4 {
-	grid-area: content;
+	grid-area: codelinks;
 }
 #g5 {
-	grid-area: content;
+	grid-area: codehelp;
 }
 #g6 {
-	grid-area: content;
+	grid-area: graphics;
 }
 #g7 {
-	grid-area: content;
+	grid-area: consoles;
 }
 #g8 {
-	grid-area: content;
+	grid-area: artlinks;
 }
 #g9 {
-	grid-area: content;
+	grid-area: games;
 }
 #g10 {
-	grid-area: content;
+	grid-area: misc;
 }
 #g11 {
-	grid-area: content;
+	grid-area: sites;
 }
 
 /* -------------- animation -------------- */
