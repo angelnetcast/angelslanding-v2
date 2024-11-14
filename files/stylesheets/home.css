@@ -17,10 +17,9 @@
 /* -------------- page -------------- */
 html {
 	background-image: url(/assets/images/backgrounds/grid.png);
-	/* animation: background 12s infinite linear; sometimes i comment this bc the moving background kills my laptop live preview. if ur snoopin in the code and see this off, remind me 2 turn it back on lol */
+	animation: background 12s infinite linear; /* sometimes i comment this bc the moving background kills my laptop live preview. if ur snoopin in the code and see this off, remind me 2 turn it back on lol */
 }
 body {
-	background-color: var(--black);
 	width: 950px;
 	position: relative;
 	margin-left: auto;
@@ -51,6 +50,7 @@ body {
 .grid-sec {
 	background-color: var(--black);
 	border: 2px var(--white) solid;
+	box-shadow: 10px 10px 25px var(--black);
 	padding: 10px;
 	margin: 5px;
 }
