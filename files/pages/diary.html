@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!---->
 		<meta charset="utf-8" />
 		<meta name="author" content="Angel Valentine" />
 		<meta name="description" content="ANGEL'S LANDING v1.5 - BLOG" />
 		<meta name="keywords" content="Cute, Purple" />
 		<link href="/style.css" rel="stylesheet" />
+		<link href="/stylesheets/diary.css" rel="stylesheet" />
+
 		<title>ANGEL'S LANDING v1.5 - DIARY</title>
 	</head>
 
 	<body>
-		<h1>diary</h1>
-		<p>i talk about my life and try not to overshare lol. not very interesting, but it's a good way for me to keep up with what's happening in my life.</p>
+		<!-- grid container -->
+		<div class="grid-cont">
+			<!-- g1 - navigation links -->
+			<div class="grid-sec" id="g1">
+				<h1>navigation</h1>
 
-		<h2>2024</h2>
-		<ul>
-			<li><a href="/pages/diaries/24aug.html">august</a></li>
-			<li><a href="/pages/diaries/24sep.html">september</a></li>
-			<li><a href="/pages/diaries/24oct.html">october</a></li>
-			<li><a href="/pages/diaries/24nov.html">november</a></li>
-		</ul>
+				<h2>2024</h2>
+				<ul>
+					<li><a href="/pages/diaries/24aug.html" target="content">august</a></li>
+					<li><a href="/pages/diaries/24sep.html" target="content">september</a></li>
+					<li><a href="/pages/diaries/24oct.html" target="content">october</a></li>
+					<li><a href="/pages/diaries/24nov.html" target="content">november</a></li>
+				</ul>
 
-		<p>
-			<a href="/pages/home.html">HOME?</a>
-		</p>
+				<p>
+					<a href="/pages/home.html">HOME?</a>
+				</p>
+			</div>
+
+			<!-- g2 - entry display -->
+			<div class="grid-sec" id="g2">
+				<iframe
+					src="/pages/diaries/landingpage.html"
+					title="Selected Diary Entry"
+					name="content"
+					height="900px"
+					width="770px"
+					frameborder="0"></iframe>
+			</div>
+		</div>
 	</body>
 </html>
