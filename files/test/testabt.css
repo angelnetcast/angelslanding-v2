@@ -15,28 +15,51 @@
 
 /* -------------- main layout -------------- */
 html {
-	background-image: url(/assets/images/backgrounds/grid.png);
-	animation: background 12s infinite linear; /* sometimes i comment this bc the moving background kills my laptop live preview. if ur snoopin in the code and see this off, remind me 2 turn it back on lol */
-	color: var(--light);
-	font-family: nds;
-	font-size: 20px;
-	line-height: 1;
+	background-image: url(/assets/images/backgrounds/konatawinxp.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 body {
-	width: 950px;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
+	width: 1000px;
 }
 /* -------------- windows -------------- */
 
 /* ----- about ----- */
-#about {
-	width: 500px;
+#abouthead {
+	width: 600px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+#aboutbody {
+	height: 470px;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 #topfavs {
 	text-align: center;
+}
+
+#statuscafe {
+	padding: 0.5em;
+	background-color: azure;
+	border: 1px solid midnightblue;
+}
+#statuscafe-username {
+	margin-bottom: 0.5em;
+}
+#statuscafe-content {
+	margin: 0 1em 0.5em 1em;
+}
+
+#friendcodes {
+	text-align: center;
+}
+
+#friendcodes > img {
+	width: 150px;
 }
 
 /* --- about grid --- */
@@ -52,25 +75,62 @@ body {
 	margin: 15px;
 }
 
-#g1 {
+#ag1 {
 	grid-area: left;
 	text-align: center;
 }
-#g2 {
+#ag2 {
 	grid-area: right;
 	text-align: center;
 }
-/* ----- grayscale ----- */
-#graphics {
-	width: 300px;
+/* ----- blinkies ----- */
+#blinkies {
+	width: 350px;
+	position: absolute;
+	bottom: 40px;
+	right: 570px;
 }
 
-/* -------------- animation -------------- */
-@keyframes background {
-	0% {
-		background-position: 0px 0px;
-	}
-	100% {
-		background-position: 307px 133px;
-	}
+.blinkieimg {
+	width: 150px;
+	height: 22px;
+}
+
+/* ----- lastfm ----- */
+#lastfm {
+	position: absolute;
+	top: 40px;
+	right: 450px;
+	width: 300px;
+	text-align: center;
+}
+
+/* --- lastfm grid --- */
+
+.lastfm-grid-cont {
+	display: grid;
+	grid-template-areas: "left right";
+	padding: 10px;
+}
+
+.lastfm-grid-sec {
+	margin: 5px;
+}
+
+#mg1 {
+	grid-area: left;
+	text-align: center;
+}
+#mg2 {
+	grid-area: right;
+	text-align: center;
+}
+
+/* ----- blinkies ----- */
+#home {
+	position: absolute;
+	bottom: 40px;
+	right: 15px;
+	width: 250px;
+	text-align: center;
 }
