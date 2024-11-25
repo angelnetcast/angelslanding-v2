@@ -5,14 +5,14 @@
 		<meta name="author" content="Angel Valentine" />
 		<meta name="description" content="ANGEL'S LANDING v2 - ABOUT" />
 		<meta name="keywords" content="Cute, Purple" />
-		<link href="/style.css" rel="stylesheet" />
 		<link href="/test/testabt.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://unpkg.com/7.css" />
 		<title>ANGEL'S LANDING v2 - ABOUT</title>
 	</head>
 
 	<body>
-		<div class="window active" style="max-width: 300px">
+		<!-- about -->
+		<div class="window active" id="about">
 			<div class="title-bar">
 				<div class="title-bar-text">angel.exe</div>
 				<div class="title-bar-controls">
@@ -22,12 +22,222 @@
 				</div>
 			</div>
 			<div class="window-body has-space">
-				<p>
-					windows 7 i miss and love you forever
-					<br />
-					this is gonna b my new abt page i just gotta figure some junk out first :3
-				</p>
+				<section class="tabs">
+					<menu role="tablist" aria-label="Tabs Template">
+						<button role="tab" aria-controls="tab-A" aria-selected="true">
+							about
+						</button>
+						<button role="tab" aria-controls="tab-B">contact</button>
+						<button role="tab" aria-controls="tab-C">favorites</button>
+						<button role="tab" aria-controls="tab-D" disabled="">secrets</button>
+					</menu>
+					<article role="tabpanel" id="tab-A">
+						<div class="abt-grid-cont">
+							<div class="abt-grid-sec" id="g1">
+								<img
+									src="/assets/images/art/decoration/pancakewink-abt.png"
+									width="200px"
+									alt="pancake wink" />
+								<p>he/she | nov 16</p>
+								<a href="https://www.imood.com/users/angelnetcast"
+									><img
+										src="https://moods.imood.com/display/uname-angelnetcast/trans-1/imood.gif"
+										alt="The current mood of angelnetcast at www.imood.com"
+										border="0"
+								/></a>
+							</div>
+							<div class="abt-grid-sec" id="g2">
+								<div class="miniabt">
+									<p>
+										hallo everynyan! i'm angel and i'm the webmaster of angel's landing.
+										i'm an autistic student just doing her best to make it through life o7
+									</p>
+									<p>
+										i spend most of my days slacking off and working on creative projects
+										instead of my schoolwork. my hobbies primarily include webdev,
+										drawing, videogames, and console collection.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article role="tabpanel" id="tab-B" hidden="">
+						<p>
+							how to find me on other parts of the web!
+							<br />
+							<i>want a quick repsonse?</i> shoot me an email @ angelnetcast dot
+							protonmail dot com!
+						</p>
+						<p>
+							code:
+							<br />
+							<a href="https://github.com/angelnetcast" target="_blank">github</a>
+							<br />
+							<a href="https://codepen.io/angelnetcast" target="_blank">codepen</a>
+						</p>
+						<p>
+							art:
+							<br />
+							<a href="https://sheezy.art/angelnetcast" target="_blank">sheezy</a>
+							<br />
+							<a href="https://toyhou.se/angelnetcast">toyhou.se</a>
+							<br />
+							<a href="https://artfight.net/~angelnetcast">artfight</a>
+							<br /><a href="https://soundcloud.com/angelnetcast" target="_blank"
+								>soundcloud</a
+							>
+							<br />
+							<a href="https://angelnetcastart.tumblr.com/" target="_blank"
+								>tumblr (art only)</a
+							>
+						</p>
+						<p>
+							media logs:
+							<br />
+
+							<a href="https://myanimelist.net/profile/angelnetcast" target="_blank"
+								>myanimelist</a
+							>
+							<br />
+							<a href="https://www.last.fm/user/angelnetcast" target="_blank"
+								>last.fm</a
+							>
+							<br />
+
+							<a href="https://rateyourmusic.com/~angelnetcast" target="_blank"
+								>rate your music</a
+							>
+							<br />
+							<a href="https://glitchwave.com/user/angelnetcast/" target="_blank"
+								>glitchwave</a
+							>
+							<br />
+							<a href="https://letterboxd.com/angelnetcast/" target="_blank"
+								>letterboxd</a
+							>
+							<br />
+							<a href="https://moku.blog/user/angelnetcast" target="_blank"
+								>moku.blog</a
+							>
+						</p>
+						<p>
+							social media:
+							<br />
+							<a href="https://angelnetcast.tumblr.com/" target="_blank">tumblr</a>
+							<br />
+							<a
+								href="https://bsky.app/profile/angelnetcast.bsky.social"
+								target="_blank"
+								>bluesky</a
+							>
+						</p>
+					</article>
+					<article role="tabpanel" id="tab-C" hidden="">
+						<div id="topfavs">
+							<p>
+								<b>color: </b>light blue
+								<br />
+								<b>cats vs dogs: </b>cats!
+								<br />
+								<b>artist: </b>vylet pony
+								<br />
+								<b>console: </b> nintendo 3ds
+								<br />
+								<b>game: </b>splatoon
+								<br />
+								<b>subject: </b>computer class
+								<br />
+								<b>os: </b>windows 7
+								<br />
+								<b>language: </b>html
+							</p>
+						</div>
+
+						<table style="width: 100%">
+							<tr>
+								<th>media</th>
+								<th>titles</th>
+							</tr>
+							<tr>
+								<td>television</td>
+								<td>
+									amphibia, the owl house, sonic boom, sonic prime, my little pony,
+									inside job, bee and puppycat, hilda
+								</td>
+							</tr>
+							<tr>
+								<td>movies</td>
+								<td>
+									spiderverse trilogy, guardians of the galaxy, lilo and stitch, rio,
+									surf's up, wall-e, over the hedge, equestria girls, the creator (2023),
+									the matrix, nimona, get out
+								</td>
+							</tr>
+							<tr>
+								<td>comics</td>
+								<td>
+									babymouse, zita the spacegirl, moonstruck, the backstagers, 5 worlds,
+									peanuts, garfield
+								</td>
+							</tr>
+							<tr>
+								<td>animanga</td>
+								<td>
+									toilet bound hanako-kun, horimiya, nichijou, a silent voice, madoka
+									magica, neon genesis evangelion, hunter x hunter, card captor sakura
+								</td>
+							</tr>
+							<tr>
+								<td>games</td>
+								<td>
+									splatoon, pikmin, animal crossing new leaf, halo, sky children of the
+									light, sonic cd, mario kart, tomodachi life, sonic heroes, stray,
+									portal, roller coaster tycoon 3, papa's pancakeria
+								</td>
+							</tr>
+							<tr>
+								<td>characters</td>
+								<td>
+									miles morales, homura akemi, raegan ridley, amity blight, killua
+									zoldyck, twilight sparkle, shadow the hedgehog, rei ayanami, marcy wu,
+									sonic the hedgehog, snoopy, garfield
+								</td>
+							</tr>
+							<tr>
+								<td>music</td>
+								<td>
+									vylet pony, rex orange county, dominic fike, beabadoobee, porter
+									robinson, sega sound team, brockhampton, pinkpantheress, snail's house
+								</td>
+							</tr>
+							<tr>
+								<td>books</td>
+								<td>
+									warriors, wings of fire, uglies, the secret garden, 13 treasures,
+									ender's game, ready player one, disney fairies
+								</td>
+							</tr>
+						</table>
+					</article>
+					<article role="tabpanel" id="tab-D" hidden="">
+						oooo why are u so nosy...
+					</article>
+				</section>
 			</div>
 		</div>
+
+		<!-- graphics -->
+		<div class="window active" id="graphics">
+			<div class="title-bar">
+				<div class="title-bar-text">graphics.exe</div>
+				<div class="title-bar-controls">
+					<button aria-label="Minimize"></button>
+					<button aria-label="Maximize"></button>
+					<button aria-label="Close"></button>
+				</div>
+			</div>
+			<div class="window-body has-space">:p</div>
+		</div>
 	</body>
+	<script src="/scripts/ariatabs.js"></script>
 </html>
