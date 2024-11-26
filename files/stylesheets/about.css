@@ -68,7 +68,7 @@ body {
 	display: grid;
 	grid-template-areas: "left right";
 	padding: 10px;
-	width: 450px;
+	width: 500px;
 }
 
 .abt-grid-sec {
@@ -89,6 +89,7 @@ body {
 	position: absolute;
 	bottom: 40px;
 	right: 570px;
+	text-align: center;
 }
 
 .blinkieimg {
