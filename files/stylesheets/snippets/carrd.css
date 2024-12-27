@@ -1,0 +1,306 @@
+/* ---------------------------- carrd stylesheet ---------------------------- */
+
+/* -------------- colors -------------- */
+
+:root {
+	/* ----- colors ----- */
+	--red: #b92a27;
+	--pink: #f59fc4;
+	--lightpink: #f0d4e3;
+	--yellow: #f8f284;
+	--blue: #6ec6ec;
+	--lightblue: #c7eafd;
+	--darkblue: #0077c0;
+}
+
+/* -------------- fonts -------------- */
+@font-face {
+	font-family: porkys;
+	src: url("/assets/fonts/porkys.TTF");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* -------------- page -------------- */
+html {
+	background-image: url(/assets/images/backgrounds/dotgrid.jpg);
+	font-family: helvetica;
+	color: var(--darkblue);
+}
+
+body {
+}
+
+/* -------------- grid -------------- */
+
+/* -- container -- */
+.grid-cont {
+	display: grid;
+	grid-template-areas:
+		"nav nav nav nav"
+		"abt abt links links"
+		"footer footer footer footer";
+
+	padding: 10px;
+	width: 700px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* -- all sections -- */
+.grid-sec {
+	border: 1px var(--darkblue) solid;
+	background-color: white;
+	margin: 5px;
+	padding: 10px;
+}
+
+/* -- indvidual sections -- */
+#g1 {
+	grid-area: nav;
+	text-align: right;
+}
+
+#g2 {
+	grid-area: abt;
+	text-align: center;
+}
+#g3 {
+	grid-area: links;
+	text-align: center;
+}
+#g4 {
+	grid-area: footer;
+	text-align: right;
+}
+
+/* -------------- decoration -------------- */
+/* -------------- emphasis -------------- */
+mark {
+	background-color: var(--yellow);
+	color: var(--darkblue);
+}
+
+b {
+	color: var(--pink);
+}
+
+u {
+	text-decoration-style: wavy;
+	text-decoration-color: var(--medium);
+}
+
+/* -------------- links -------------- */
+a {
+	text-decoration-style: dotted;
+}
+
+a:link {
+	color: var(--pink);
+}
+
+a:visited {
+	color: var(--red);
+}
+
+a:hover {
+	color: var(--yellow);
+}
+
+/* ----- highlighted text ----- */
+::selection {
+	color: var(--darkblue);
+	background: var(--yellow);
+}
+
+/* ----- title ----- */
+/* style-my-tootltips plugin, tooltip styling */
+#s-m-t-tooltip {
+	/* basic */
+	max-width: 300px;
+	z-index: 10;
+	margin: 24px 14px 7px 12px;
+	/* style and design */
+	padding: 8px;
+	background: var(--yellow);
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	/*
+  -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
+  */
+	/* font */
+	font-family: helvetica;
+	font-size: 19px;
+	line-height: 16px;
+	color: var(--darkblue);
+}
+
+/* -------------- deco -------------- */
+
+h1 {
+	font-family: porkys;
+}
+.pink {
+	color: var(--pink);
+}
+.yellow {
+	color: var(--yellow);
+}
+.blue {
+	color: var(--blue);
+}
+
+/* -------------- stickers -------------- */
+#kitty {
+	position: absolute;
+	left: 280px;
+	bottom: 0px;
+	z-index: 1;
+}
+
+#disc {
+	position: absolute;
+	right: 280px;
+	top: 120px;
+	z-index: -1;
+      animation: spin 4s linear infinite;
+
+}
+
+/* -------------- css animation -------------- */
+
+@keyframes spin {
+  100% {
+    transform-origin: center;
+    transform: rotate(-360deg);
+  }
+}
+
+/* Rotate */
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+	50% {
+		-webkit-transform: translateY(-4px);
+		transform: translateY(-4px);
+	}
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+@keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+	50% {
+		-webkit-transform: translateY(-4px);
+		transform: translateY(-4px);
+	}
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+@-webkit-keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+@keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+.hvr-bob {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover,
+.hvr-bob:focus,
+.hvr-bob:active {
+	-webkit-animation-name: hvr-bob-float, hvr-bob;
+	animation-name: hvr-bob-float, hvr-bob;
+	-webkit-animation-duration: 0.3s, 1.5s;
+	animation-duration: 0.3s, 1.5s;
+	-webkit-animation-delay: 0s, 0.3s;
+	animation-delay: 0s, 0.3s;
+	-webkit-animation-timing-function: ease-out, ease-in-out;
+	animation-timing-function: ease-out, ease-in-out;
+	-webkit-animation-iteration-count: 1, infinite;
+	animation-iteration-count: 1, infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-direction: normal, alternate;
+	animation-direction: normal, alternate;
+}
+
+/* Buzz */
+@-webkit-keyframes hvr-buzz {
+	50% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg);
+	}
+	100% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg);
+	}
+}
+@keyframes hvr-buzz {
+	50% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg);
+	}
+	100% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg);
+	}
+}
+.hvr-buzz {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-buzz:hover,
+.hvr-buzz:focus,
+.hvr-buzz:active {
+	-webkit-animation-name: hvr-buzz;
+	animation-name: hvr-buzz;
+	-webkit-animation-duration: 0.15s;
+	animation-duration: 0.15s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
