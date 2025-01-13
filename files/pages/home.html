@@ -1,341 +1,281 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="author" content="Angel Valentine" />
-		<meta name="description" content="ANGEL'S LANDING v2 - HOME" />
-		<meta name="keywords" content="Cute, Purple" />
-		<link href="/style.css" rel="stylesheet" />
-		<link href="/stylesheets/home.css" rel="stylesheet" />
-		<link href="/stylesheets/snippets/musicplayer.css" rel="stylesheet" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Angel Valentine" />
+    <meta name="description" content="ANGEL'S LANDING v2 - HOME" />
+    <meta name="keywords" content="Cute, Purple" />
+    <link href="/style.css" rel="stylesheet" />
+    <link href="/stylesheets/home.css" rel="stylesheet" />
+    <link href="/stylesheets/snippets/musicplayer.css" rel="stylesheet" />
 
-		<title>ANGEL'S LANDING v2 - HOME</title>
-	</head>
+    <title>ANGEL'S LANDING v2 - HOME</title>
+  </head>
 
-	<body onload="startTime()">
-		<!-- the onload thing is for the clock -->
-		<div class="grid-cont">
-			<!-- banner -->
-			<div class="grid-sec" id="g1">
-				<a href="https://ruralrose.neocities.org/"
-					><img
-						src="/assets/images/banners/angelslanding-ruralrose.png"
-						alt="banner by ruralrose.neocities"
-						title="banner commissioned from @ruralrose! click image to go to site" />
-				</a>
-			</div>
+  <body onload="startTime()">
+    <!-- the onload thing is for the clock -->
+    <div class="grid-cont">
+      <!-- banner -->
+      <div class="grid-sec" id="g1">
+        <a href="https://ruralrose.neocities.org/"
+          ><img
+            src="/assets/images/banners/angelslanding-ruralrose.png"
+            alt="banner by ruralrose.neocities"
+            title="banner commissioned from @ruralrose! click image to go to site"
+          />
+        </a>
+      </div>
 
-			<!-- quote/blurb thing -->
-			<div class="grid-sec" id="g2">
-				<marquee>hallo everynyan</marquee>
-			</div>
+      <!-- quote/blurb thing -->
+      <div class="grid-sec" id="g2">
+        <marquee>hallo everynyan</marquee>
+      </div>
 
-			<!-- music player -->
-			<div class="grid-sec" id="g3">
-				<img
-					src="/assets/images/art/decoration/audiocake.png"
-					width="150px"
-					alt="cake wearing headphones" />
+      <!-- music player -->
+      <div class="grid-sec" id="g3">
+        <img src="/assets/images/art/decoration/audiocake.png" width="150px" alt="cake wearing headphones" />
 
-				<div id="musicplayer">
-					<div>
-						<marquee scrollamount="8" class="songtitle"></marquee>
-					</div>
+        <div id="musicplayer">
+          <div>
+            <marquee scrollamount="8" class="songtitle"></marquee>
+          </div>
 
-					<table class="controls">
-						<tr>
-							<td>
-								<div class="prev-track" onclick="prevTrack()">
-									<i class="fas fa-backward"></i>
-								</div>
-							</td>
-							<td>
-								<div class="playpause-track" onclick="playpauseTrack()">
-									<i class="fas fa-play"></i>
-								</div>
-							</td>
-							<td>
-								<div class="next-track" onclick="nextTrack()">
-									<i class="fas fa-forward"></i>
-								</div>
-							</td>
-						</tr>
-					</table>
+          <table class="controls">
+            <tr>
+              <td>
+                <div class="prev-track" onclick="prevTrack()">
+                  <i class="fas fa-backward"></i>
+                </div>
+              </td>
+              <td>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                  <i class="fas fa-play"></i>
+                </div>
+              </td>
+              <td>
+                <div class="next-track" onclick="nextTrack()">
+                  <i class="fas fa-forward"></i>
+                </div>
+              </td>
+            </tr>
+          </table>
 
-					<div class="seeking">
-						<div class="current-time">00:00</div>
+          <div class="seeking">
+            <div class="current-time">00:00</div>
 
-						<input
-							type="range"
-							min="1"
-							max="100"
-							value="0"
-							class="seek_slider"
-							onchange="seekTo()" />
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()" />
 
-						<div class="total-duration">0:00</div>
-					</div>
+            <div class="total-duration">0:00</div>
+          </div>
 
-					<audio id="music" src=""></audio>
-				</div>
-			</div>
+          <audio id="music" src=""></audio>
+        </div>
+      </div>
 
-			<!-- welcome message -->
-			<div class="grid-sec" id="g4">
-				<h1>welcome</h1>
-				<p>
-					welcome to version 2.0 of angel's landing! this site is coded by
-					<u>angel valentine</u> as a side project turned main hobby. you can find
-					art, music, opinion/original writing, guides, and so much more here.
-				</p>
-				<p>
-					unsure of where to go first? check the
-					<a href="/pages/sitemap.html">sitemap</a> for a list of links, or go to my
-					<a href="https://angelnetcast.atabook.org/">guestbook</a> to leave a
-					comment!
-				</p>
-				<p>
-					<b><i>note:</i></b> this website uses javascript and iframes. i promise i'm
-					not trying to steal your information! it <i>should</i> work on any browser,
-					but this is primarily tested on firefox so some things may not work outside
-					of it, or look weird.
-				</p>
-			</div>
+      <!-- welcome message -->
+      <div class="grid-sec" id="g4">
+        <h1>welcome</h1>
+        <p>
+          welcome to version 2.0 of angel's landing! this site is coded by
+          <u>angel valentine</u> as a side project turned main hobby. you can find art, music, opinion/original writing, guides,
+          and so much more here.
+        </p>
+        <p>
+          unsure of where to go first? check the
+          <a href="/pages/sitemap.html">sitemap</a> for a list of links, or go to my
+          <a href="https://angelnetcast.atabook.org/">guestbook</a> to leave a comment!
+        </p>
+        <p>
+          <b><i>note:</i></b> this website uses javascript and iframes. i promise i'm not trying to steal your information! it
+          <i>should</i> work on any browser, but this is primarily tested on firefox so some things may not work outside of it, or
+          look weird.
+        </p>
+      </div>
 
-			<!-- clock -->
-			<div class="grid-sec" id="g5">
-				<h1><div id="clock"></div></h1>
-			</div>
+      <!-- clock -->
+      <div class="grid-sec" id="g5">
+        <h1><div id="clock"></div></h1>
+      </div>
 
-			<!-- calendar -->
-			<div class="grid-sec" id="g6">
-				<script src="/scripts/calendar.js"></script>
-			</div>
+      <!-- calendar -->
+      <div class="grid-sec" id="g6">
+        <script src="/scripts/calendar.js"></script>
+      </div>
 
-			<!-- navlinks -->
-			<div class="grid-sec" id="g7">
-				<h1>navigation</h1>
-				<ul>
-					<li><a href="/pages/about.html">about</a></li>
-					<li><a href="/pages/blog.html">blog</a></li>
-					<li><a href="/pages/diary.html">diary</a></li>
-					<li><a href="/pages/interests.html">interests</a></li>
-					<li><a href="">music</a> (coming soon)</li>
-					<li><a href="/pages/art.html">art</a></li>
-					<li><a href="/pages/links.html">links</a></li>
-					<li><a href="https://angelsarchives.neocities.org/">archive</a></li>
-					<li><a href="/pages/sitemap.html">sitemap</a></li>
-				</ul>
-			</div>
+      <!-- navlinks -->
+      <div class="grid-sec" id="g7">
+        <h1>navigation</h1>
+        <ul>
+          <li><a href="/pages/about.html">about</a></li>
+          <li><a href="/pages/blog.html">blog</a></li>
+          <li><a href="/pages/diary.html">diary</a></li>
+          <li><a href="/pages/interests.html">interests</a></li>
+          <li><a href="">music</a> (coming soon)</li>
+          <li><a href="/pages/art.html">art</a></li>
+          <li><a href="/pages/links.html">links</a></li>
+          <li><a href="https://angelsarchives.neocities.org/">archive</a></li>
+          <li><a href="/pages/sitemap.html">sitemap</a></li>
+        </ul>
+      </div>
 
-			<!-- updates -->
-			<div class="grid-sec" id="g8">
-				<h1>updates</h1>
-				<p>1-13-25: a lot of small updates have been happening behind the scenes, so sorry about the lack of updates! art page is now live (and i'll add art later today)</p>
-				<p>11-25-24: win7 theme for about page is finished!</p>
-				<p>11-19-24: fixed shrines, about, sitemap, + various page backgrounds</p>
-				<p>11-16-24: <b>v2 is live!</b></p>
-				<p>10-23-24: added</p>
-				<p>10-21-24: added fc2 counters</p>
-				<p>10-17-24: the new grid is made (and probs not actually published)</p>
-			</div>
+      <!-- updates -->
+      <div class="grid-sec" id="g8">
+        <h1>updates</h1>
+        <p>
+          1-13-25: a lot of small updates have been happening behind the scenes, so sorry about the lack of updates! art page is
+          now live and nge shrine has a bit of writing
+        </p>
+        <p>11-25-24: win7 theme for about page is finished!</p>
+        <p>11-19-24: fixed shrines, about, sitemap, + various page backgrounds</p>
+        <p>11-16-24: <b>v2 is live!</b></p>
+        <p>10-23-24: added</p>
+        <p>10-21-24: added fc2 counters</p>
+        <p>10-17-24: the new grid is made (and probs not actually published)</p>
+      </div>
 
-			<!-- to-do list -->
-			<div class="grid-sec" id="g9">
-				<h1>to-do</h1>
-				<ul>
-					<li>fix the music player on home screen</li>
-					<li>theme she-ra and splatoon shrines</li>
-					<li>fix/replace calendar</li>
-					<li>re-add music and art pages</li>
-					<li>finish nge and pmmm shrines</li>
-					<li><s>win7 theme about page</s></li>
-					<li><s>put links to socials on about</s></li>
-				</ul>
-			</div>
+      <!-- to-do list -->
+      <div class="grid-sec" id="g9">
+        <h1>to-do</h1>
+        <ul>
+          <li>fix the music player on home screen</li>
+          <li>theme she-ra and splatoon shrines</li>
+          <li>fix/replace calendar</li>
+          <li>re-add music and art pages</li>
+          <li>finish nge and pmmm shrines</li>
+          <li><s>win7 theme about page</s></li>
+          <li><s>put links to socials on about</s></li>
+        </ul>
+      </div>
 
-			<!-- featured something -->
-			<div class="grid-sec" id="g10">
-				<h1>empty square</h1>
-				<p>wow so cool!</p>
-			</div>
+      <!-- featured something -->
+      <div class="grid-sec" id="g10">
+        <h1>empty square</h1>
+        <p>wow so cool!</p>
+      </div>
 
-			<!-- song/album of the moment -->
-			<div class="grid-sec" id="g11">
-				<h1>featured album</h1>
-				<img src="/assets/images/music/gwaw.jpg" width="300px" />
-				<h2>girls who are wizards</h2>
-				<p>vylet pony</p>
-			</div>
+      <!-- song/album of the moment -->
+      <div class="grid-sec" id="g11">
+        <h1>featured album</h1>
+        <img src="/assets/images/music/gwaw.jpg" width="300px" />
+        <h2>girls who are wizards</h2>
+        <p>vylet pony</p>
+      </div>
 
-			<!-- poll -->
-			<div class="grid-sec" id="g12">
-				<h1>poll</h1>
-				<form method="post" action="https://poll.pollcode.com/21929549">
-					<div
-						style="
-							background-color: #171717;
-							padding: 2px;
-							width: 210px;
-							font-family: Arial;
-							font-size: medium;
-							color: #d6cef6;
-						">
-						<div style="padding: 2px 0px 4px 2px">
-							<strong>what's the best weather?</strong>
-						</div>
-						<input
-							type="checkbox"
-							name="answer"
-							value="1"
-							id="answer219295491"
-							style="float: left" /><label
-							for="answer219295491"
-							style="float: left; width: 179px"
-							>sunny</label
-						>
-						<div style="clear: both; height: 2px"></div>
-						<input
-							type="checkbox"
-							name="answer"
-							value="2"
-							id="answer219295492"
-							style="float: left" /><label
-							for="answer219295492"
-							style="float: left; width: 179px"
-							>cloudy</label
-						>
-						<div style="clear: both; height: 2px"></div>
-						<input
-							type="checkbox"
-							name="answer"
-							value="3"
-							id="answer219295493"
-							style="float: left" /><label
-							for="answer219295493"
-							style="float: left; width: 179px"
-							>windy</label
-						>
-						<div style="clear: both; height: 2px"></div>
-						<input
-							type="checkbox"
-							name="answer"
-							value="4"
-							id="answer219295494"
-							style="float: left" /><label
-							for="answer219295494"
-							style="float: left; width: 179px"
-							>rainy</label
-						>
-						<div style="clear: both; height: 2px"></div>
-						<input
-							type="checkbox"
-							name="answer"
-							value="5"
-							id="answer219295495"
-							style="float: left" /><label
-							for="answer219295495"
-							style="float: left; width: 179px"
-							>snowy</label
-						>
-						<div style="clear: both; height: 2px"></div>
-						<input
-							type="checkbox"
-							name="answer"
-							value="6"
-							id="answer219295496"
-							style="float: left" /><label
-							for="answer219295496"
-							style="float: left; width: 179px"
-							>stormy</label
-						>
-						<div style="clear: both; height: 2px"></div>
-						<div align="center" style="padding: 3px">
-							<input type="submit" value=" Vote " />&nbsp;<input
-								type="submit"
-								name="view"
-								value=" View " />
-						</div>
-						<div align="right" style="font-size: 10px">
-							pollcode.com <a href="https://pollcode.com/">free polls</a>
-						</div>
-					</div>
-				</form>
-			</div>
+      <!-- poll -->
+      <div class="grid-sec" id="g12">
+        <h1>poll</h1>
+        <form method="post" action="https://poll.pollcode.com/21929549">
+          <div
+            style="background-color: #171717; padding: 2px; width: 210px; font-family: Arial; font-size: medium; color: #d6cef6"
+          >
+            <div style="padding: 2px 0px 4px 2px">
+              <strong>what's the best weather?</strong>
+            </div>
+            <input type="checkbox" name="answer" value="1" id="answer219295491" style="float: left" /><label
+              for="answer219295491"
+              style="float: left; width: 179px"
+              >sunny</label
+            >
+            <div style="clear: both; height: 2px"></div>
+            <input type="checkbox" name="answer" value="2" id="answer219295492" style="float: left" /><label
+              for="answer219295492"
+              style="float: left; width: 179px"
+              >cloudy</label
+            >
+            <div style="clear: both; height: 2px"></div>
+            <input type="checkbox" name="answer" value="3" id="answer219295493" style="float: left" /><label
+              for="answer219295493"
+              style="float: left; width: 179px"
+              >windy</label
+            >
+            <div style="clear: both; height: 2px"></div>
+            <input type="checkbox" name="answer" value="4" id="answer219295494" style="float: left" /><label
+              for="answer219295494"
+              style="float: left; width: 179px"
+              >rainy</label
+            >
+            <div style="clear: both; height: 2px"></div>
+            <input type="checkbox" name="answer" value="5" id="answer219295495" style="float: left" /><label
+              for="answer219295495"
+              style="float: left; width: 179px"
+              >snowy</label
+            >
+            <div style="clear: both; height: 2px"></div>
+            <input type="checkbox" name="answer" value="6" id="answer219295496" style="float: left" /><label
+              for="answer219295496"
+              style="float: left; width: 179px"
+              >stormy</label
+            >
+            <div style="clear: both; height: 2px"></div>
+            <div align="center" style="padding: 3px">
+              <input type="submit" value=" Vote " />&nbsp;<input type="submit" name="view" value=" View " />
+            </div>
+            <div align="right" style="font-size: 10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div>
+          </div>
+        </form>
+      </div>
 
-			<!-- site stats -->
-			<div class="grid-sec" id="g13">
-				<h1>stats</h1>
-				<p>
-					you are visitor number...
-					<br />
-					<!-- FC2 Counter  Starts here -->
-					<script
-						language="javascript"
-						type="text/javascript"
-						src="//counter1.fc2.com/counter.php?id=39812842&main=1"></script>
-					<noscript
-						><img src="//counter1.fc2.com/counter_img.php?id=39812842&main=1"
-					/></noscript>
-					<!-- FC2 Counter  Ends here -->
-				</p>
-				<p>
-					currently online:
-					<br />
-					<!-- FC2 Counter  Starts here -->
-					<script
-						language="javascript"
-						type="text/javascript"
-						src="//counter1.fc2.com/views.php?id=39812842&main=1"></script>
-					<noscript
-						><img src="//counter1.fc2.com/counter_now.php?id=39812842&main=1"
-					/></noscript>
-					<!-- FC2 Counter  Ends here -->
-				</p>
-			</div>
+      <!-- site stats -->
+      <div class="grid-sec" id="g13">
+        <h1>stats</h1>
+        <p>
+          you are visitor number...
+          <br />
+          <!-- FC2 Counter  Starts here -->
+          <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39812842&main=1"></script>
+          <noscript><img src="//counter1.fc2.com/counter_img.php?id=39812842&main=1" /></noscript>
+          <!-- FC2 Counter  Ends here -->
+        </p>
+        <p>
+          currently online:
+          <br />
+          <!-- FC2 Counter  Starts here -->
+          <script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=39812842&main=1"></script>
+          <noscript><img src="//counter1.fc2.com/counter_now.php?id=39812842&main=1" /></noscript>
+          <!-- FC2 Counter  Ends here -->
+        </p>
+      </div>
 
-			<!-- link buttons -->
-			<div class="grid-sec" id="g14">
-				<h1>link me</h1>
-				<p>coming soon!</p>
-			</div>
+      <!-- link buttons -->
+      <div class="grid-sec" id="g14">
+        <h1>link me</h1>
+        <p>coming soon!</p>
+      </div>
 
-			<!-- footer -->
-			<footer class="grid-sec" id="g15">
-				<p>
-					coded with &#10084; by <u>angel</u> <br />
-					est. 2022 - <i>forever</i>
-					<br />
-					<a href="https://neocities.org/site/angelnetcast">profile</a>
-					|
-					<a href="https://angelnetcast.atabook.org/">guestbook</a>
-					|
-					<a href="/index.html">landing page</a>
-				</p>
-			</footer>
-		</div>
-	</body>
-	<!-- scripts  -->
+      <!-- footer -->
+      <footer class="grid-sec" id="g15">
+        <p>
+          coded with &#10084; by <u>angel</u> <br />
+          est. 2022 - <i>forever</i>
+          <br />
+          <a href="https://neocities.org/site/angelnetcast">profile</a>
+          |
+          <a href="https://angelnetcast.atabook.org/">guestbook</a>
+          |
+          <a href="/index.html">landing page</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+  <!-- scripts  -->
 
-	<!-- clock -->
-	<script src="/scripts/clock.js"></script>
+  <!-- clock -->
+  <script src="/scripts/clock.js"></script>
 
-	<!-- music player -->
-	<script src="/scripts/musicplayer.js"></script>
-	<script
-		src="https://kit.fontawesome.com/f936906ae0.js"
-		crossorigin="anonymous"></script>
-	<!-- add this to the head!! -->
+  <!-- music player -->
+  <script src="/scripts/musicplayer.js"></script>
+  <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+  <!-- add this to the head!! -->
 
-	<!--TOOLTIP STYLING-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-	<script src="/scripts/tooltips.js"></script>
+  <!--TOOLTIP STYLING-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="/scripts/tooltips.js"></script>
 
-	<script>
-		(function ($) {
-			$(document).ready(function () {
-				$("[title]").style_my_tooltips();
-			});
-		})(jQuery);
-	</script>
+  <script>
+    (function ($) {
+      $(document).ready(function () {
+        $("[title]").style_my_tooltips();
+      });
+    })(jQuery);
+  </script>
 </html>
