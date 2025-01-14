@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- git plssss update -->
+    <meta name="author" content="Angel Valentine" />
+    <meta name="description" content="ANGEL'S LANDING v2 - LANDING PAGE" />
+    <meta name="keywords" content="Cute, Purple" />
+    <link href="/style.css" rel="stylesheet" />
+    <link href="/stylesheets/art.css" rel="stylesheet" />
+    <title>WELCOME 2 ANGEL'S LANDING v2</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>angel's art gallery</h1>
+        <p>
+          i regularly post art on <a href="https://sheezy.art/angelnetcast" target="_blank">sheezy</a>,
+          <a href="https://bsky.app/profile/angelnetcast.bsky.social" target="_blank">bluesky</a>, and
+          <a href="https://angelnetcastart.tumblr.com/" target="_blank">tumblr</a>. you can learn about my ocs on my
+          <a
+            href="https://toyhou.se/angelnetcast"
+            target="_blank"
+            title="my visibility is set to logged-in users only. have questions and no account? email me!"
+            >toyhou.se</a
+          >!
+        </p>
+        <p>
+          hover for the title and date of the artwork
+          <br />
+          if you have any questions about my art process, characters, commissions, or anything else, <u>email me</u>! i don't
+          bite, i promise.
+        </p>
+      </div>
+
+      <div class="art25">
+        <h1>2025</h1>
+        <h2>january</h2>
+        <div class="ezgallery horizontal">
+          <a href="/assets/images/art/2025/01/girlandcomfort.png"
+            ><img
+              src="/assets/images/art/2025/01/girlandcomfort.png"
+              alt="pancake holding a snoopy plushie"
+              title="just a girl and her comfort character against the world 1/6"
+          /></a>
+          <a href="/assets/images/art/2025/01/squidtime.png"
+            ><img src="/assets/images/art/2025/01/squidtime.png" alt="gummy worm just Standing There" title="squid time 2025 1/2"
+          /></a>
+        </div>
+      </div>
+
+      <p><a href="/pages/home.html">HOME?</a></p>
+    </div>
+  </body>
+  <!--TOOLTIP STYLING-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="/scripts/tooltips.js"></script>
+
+  <script>
+    (function ($) {
+      $(document).ready(function () {
+        $("[title]").style_my_tooltips();
+      });
+    })(jQuery);
+  </script>
+</html>
