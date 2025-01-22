@@ -13,18 +13,36 @@
 
 	<body>
 		<div class="container">
-			<img src="/assets/images/art/decoration/neospccake.png" width="500px" />
+			<img
+				src="/assets/images/art/decoration/neospccake.png"
+				width="500px"
+				alt="cake sitting at a glowing computer"
+				title="cake: welcome to angel's landing~!" />
 
 			<h1>welcome to angel's landing v2</h1>
 			<p>
-				some things got knocked off of the shelf, but <u>we are mostly back!</u> please don't mind any general broken/untidyness on the site for now :) the webmaster is busy drawing new decorations so expect some things to move around in the future.
+				<u>it's nice to meet you!</u> this website is full of art, music, and
+				ramblings for you to enjoy. this entire site is coded by hand with love.
+				thing's move around pretty often, so stop by again to find something new!
 			</p>
 			<p>
-				despite its colorful mascot, this site is <b>not meant for kids!</b> be wary of the sites you visit
-				and practice internet safety no matter your age. :)
+				despite its colorful mascot, this site is <b>not meant for kids!</b> be wary
+				of the sites you visit and practice internet safety no matter your age. :3
 			</p>
 
-			<h2><a href="/pages/home.html">ENTER</a></h2>
+			<h2><a href="/pages/home.html">ENTER?</a></h2>
 		</div>
 	</body>
+
+	<!--TOOLTIP STYLING-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/scripts/tooltips.js"></script>
+
+	<script>
+		(function ($) {
+			$(document).ready(function () {
+				$("[title]").style_my_tooltips();
+			});
+		})(jQuery);
+	</script>
 </html>
