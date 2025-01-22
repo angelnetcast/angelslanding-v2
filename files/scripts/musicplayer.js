@@ -22,22 +22,30 @@ let curr_track = document.getElementById("music");
 // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
 // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
 let track_list = [
-  {
-    name: "inabakumori feat. kaai yuki - lagtrain",
-    path: "https://files.catbox.moe/9ywkki.mp3",
-  },
-  {
-    name: "inabakumori feat. kaai yuki - kimi ni kaikisen",
-    path: "https://files.catbox.moe/1pxdnw.mp3",
-  },
-  {
-    name: "pinocchio-p feat. hatsune miku - god-ish",
-    path: "https://files.catbox.moe/xv3vdj.mp3",
-  },
-  {
-    name: "syudou feat. hatsune miku - her boyfriend, jude",
-    path: "https://files.catbox.moe/49iuxl.mp3",
-  },
+	{
+		name: "system settings - dsi",
+		path: "/assets/audio/dsisystemsettings.mp3",
+	},
+	{
+		name: "friend list (gamepad) - wii u",
+		path: "/assets/audio/wiiufriendlist-gamepad.mp3",
+	},
+	{
+		name: "amiibo settings - wii u",
+		path: "/assets/audio/wiiuamiibosettings.mp3",
+	},
+	{
+		name: "mii maker menu (tv) - wii u",
+		path: "/assets/audio/wiiumiimakermenu-tv.mp3",
+	},
+	{
+		name: "photo channel - wii",
+		path: "/assets/audio/wiiphotochannel.mp3",
+	},
+	{
+		name: "internet settings - 3ds",
+		path: "/assets/audio/3dsinternetsettings.mp3",
+	},
 ];
 //
 //
