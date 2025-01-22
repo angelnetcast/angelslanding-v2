@@ -85,7 +85,7 @@ body {
 }
 #g8 {
 	grid-area: updates;
-	height: 350px;
+	height: 370px;
 	overflow: scroll;
 	overflow-x: hidden;
 }
