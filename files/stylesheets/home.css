@@ -61,13 +61,9 @@ body {
 }
 #g2 {
 	grid-area: blurb;
-  padding-top: 25px;
-	height: 35px;
 }
 #g3 {
-	padding-left: 45px;
 	grid-area: music;
-
 }
 #g4 {
 	grid-area: welcome;
