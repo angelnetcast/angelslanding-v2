@@ -1,0 +1,46 @@
+/* ---------------------------- travel stylesheet ---------------------------- */
+
+/* -------------- colors -------------- */
+
+/* -------------- page -------------- */
+body {
+	width: 800px;
+}
+
+/* -------------- grid -------------- */
+
+/* -- container -- */
+.grid-cont {
+	display: grid;
+	grid-template-areas:
+		"header header header header"
+		"map map map stats"
+		"pics pics blog blog"
+		"countdown countdown blog blog";
+	padding: 10px;
+}
+
+/* -- all sections -- */
+.grid-sec {
+	border: 1px red solid;
+}
+
+/* -- indvidual sections -- */
+#g1 {
+	grid-area: header;
+}
+#g2 {
+	grid-area: map;
+}
+#g3 {
+	grid-area: stats;
+}
+#g4 {
+	grid-area: pics;
+}
+#g5 {
+	grid-area: blog;
+}
+#g6 {
+	grid-area: countdown;
+}
