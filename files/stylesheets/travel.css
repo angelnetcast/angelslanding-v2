@@ -1,10 +1,18 @@
 /* ---------------------------- travel stylesheet ---------------------------- */
 
+/* -------------- fonts -------------- */
+@font-face {
+	font-family: coolvetica;
+	src: url("/assets/fonts/coolvetica.otf");
+	font-weight: normal;
+	font-style: normal;
+}
 /* -------------- colors -------------- */
 
 /* -------------- page -------------- */
 body {
-	width: 800px;
+	width: 900px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* -------------- grid -------------- */
@@ -22,7 +30,8 @@ body {
 
 /* -- all sections -- */
 .grid-sec {
-	border: 1px red solid;
+	padding: 10px;
+	margin: 10px;
 }
 
 /* -- indvidual sections -- */
@@ -37,10 +46,26 @@ body {
 }
 #g4 {
 	grid-area: pics;
+	background-image: url(/assets/images/deco/camera.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 #g5 {
 	grid-area: blog;
+	background-image: url(/assets/images/deco/paperclipnote.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 500px;
 }
 #g6 {
+	width: 500px;
 	grid-area: countdown;
+}
+
+/* -------------- decoration -------------- */
+h1, h2, h3 {
+	font-family: coolvetica;
+	letter-spacing: 1px;
 }
