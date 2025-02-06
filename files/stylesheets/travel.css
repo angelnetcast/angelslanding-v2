@@ -11,7 +11,7 @@
 
 /* -------------- page -------------- */
 body {
-	width: 900px;
+	width: 1300px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -30,8 +30,9 @@ body {
 
 /* -- all sections -- */
 .grid-sec {
-	padding: 10px;
-	margin: 10px;
+	padding: 5px;
+	margin: 5px;
+	border: solid red 1px;
 }
 
 /* -- indvidual sections -- */
@@ -40,16 +41,18 @@ body {
 }
 #g2 {
 	grid-area: map;
+	text-align: center;
 }
 #g3 {
 	grid-area: stats;
 }
 #g4 {
 	grid-area: pics;
-	background-image: url(/assets/images/deco/camera.png);
+	background-image: url(/assets/images/photobook/seniorsunrisedrive-sanyo.JPG);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
+	text-align: center;
 }
 #g5 {
 	grid-area: blog;
@@ -57,7 +60,7 @@ body {
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 500px;
+	width: 350px;
 }
 #g6 {
 	width: 500px;
