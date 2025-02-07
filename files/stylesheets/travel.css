@@ -12,7 +12,6 @@
 /* -------------- page -------------- */
 body {
 	width: 1300px;
-	
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -41,11 +40,14 @@ body {
 }
 #g2 {
 	grid-area: map;
-	text-align: center;
+	position: relative;
+	width: 1000px;
+	height: 500px;
 }
 #g3 {
 	grid-area: stats;
 	height: 250px;
+	position: relative;
 }
 #g4 {
 	grid-area: pics;
@@ -70,9 +72,61 @@ h2,
 h3 {
 	font-family: coolvetica;
 	letter-spacing: 1px;
+	font-style: italic;
 }
 
 /* -------------- positioning -------------- */
+
+/* -- map -- */
+#usamap {
+	position: absolute;
+	z-index: 9;
+	bottom: 50px;
+	right: 155px;
+	rotate: 6deg;
+	filter: drop-shadow(rgba(0, 0, 0, 0.294) 0.3rem 0.3rem 5px);
+}
+
+#gclip {
+	position: absolute;
+	z-index: 10;
+	top: 115px;
+	right: 295px;
+	rotate: 2deg;
+	filter: drop-shadow(rgba(0, 0, 0, 0.294) 0.3rem 0.3rem 5px);
+}
+#worldmap {
+	position: absolute;
+	z-index: 7;
+	top: 60px;
+	left: 45px;
+	rotate: -3deg;
+	filter: drop-shadow(rgba(0, 0, 0, 0.294) 0.3rem 0.3rem 5px);
+}
+#pclip {
+	position: absolute;
+	z-index: 8;
+	left: 335px;
+	top: 10px;
+	rotate: -3deg;
+	filter: drop-shadow(rgba(0, 0, 0, 0.294) 0.3rem 0.3rem 5px);
+}
+#corkboard {
+	position: absolute;
+	z-index: 6;
+	filter: drop-shadow(rgba(0, 0, 0, 0.294) 0.3rem 0.3rem 5px);
+}
+
+/* -- stats -- */
+#travelcake{
+	position: absolute;
+	z-index: 12;
+}
+#island{
+	position: absolute;
+	z-index: 11;
+	bottom: -470px;
+}
 
 /* -- photo and camframe -- */
 #pic {
@@ -85,28 +139,28 @@ h3 {
 #frame {
 	position: absolute;
 	z-index: 2;
-	filter: drop-shadow(rgb(151, 151, 151) 1rem 1rem 10px);
+	filter: drop-shadow(rgba(0, 0, 0, 0.294) 1rem 1rem 10px);
 }
 
 /* -- postcard -- */
 #sticker {
 	position: absolute;
-	z-index: 4;
+	z-index: 19;
 	right: -80px;
 	bottom: 0px;
-	filter: drop-shadow(rgb(151, 151, 151) 0.5rem 0.5rem 10px);
+	filter: drop-shadow(rgba(0, 0, 0, 0.294) 0.5rem 0.5rem 10px);
 }
 #postcard {
 	position: absolute;
-	z-index: 3;
+	z-index: 18;
 	rotate: 3deg;
-	filter: drop-shadow(rgb(151, 151, 151) 1rem 1rem 10px);
+	filter: drop-shadow(rgba(0, 0, 0, 0.294) 1rem 1rem 10px);
 }
 #tape {
 	position: absolute;
-	z-index: 5;
+	z-index: 20;
 	rotate: 3deg;
 	left: 280px;
 	top: -7px;
-	filter: drop-shadow(rgb(151, 151, 151) 0.1rem 0.1rem 3px);
+	filter: drop-shadow(rgba(0, 0, 0, 0.294) 0.1rem 0.1rem 3px);
 }
