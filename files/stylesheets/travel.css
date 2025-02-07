@@ -12,6 +12,7 @@
 /* -------------- page -------------- */
 body {
 	width: 1300px;
+	
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,8 +24,8 @@ body {
 	grid-template-areas:
 		"header header header header"
 		"map map map stats"
-		"pics pics blog blog"
-		"countdown countdown blog blog";
+		"pics blog blog blog"
+		"countdown blog blog blog";
 	padding: 10px;
 }
 
@@ -32,7 +33,6 @@ body {
 .grid-sec {
 	padding: 5px;
 	margin: 5px;
-	border: solid red 1px;
 }
 
 /* -- indvidual sections -- */
@@ -45,22 +45,19 @@ body {
 }
 #g3 {
 	grid-area: stats;
+	height: 250px;
 }
 #g4 {
 	grid-area: pics;
-	background-image: url(/assets/images/photobook/seniorsunrisedrive-sanyo.JPG);
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	text-align: center;
+	position: relative;
+	width: 500px;
+	height: 300px;
 }
 #g5 {
 	grid-area: blog;
-	background-image: url(/assets/images/deco/paperclipnote.png);
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 350px;
+	position: relative;
+	width: 610px;
+	height: 390px;
 }
 #g6 {
 	width: 500px;
@@ -68,7 +65,48 @@ body {
 }
 
 /* -------------- decoration -------------- */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	font-family: coolvetica;
 	letter-spacing: 1px;
+}
+
+/* -------------- positioning -------------- */
+
+/* -- photo and camframe -- */
+#pic {
+	position: absolute;
+	z-index: 1;
+	top: 15px;
+	left: 25px;
+}
+
+#frame {
+	position: absolute;
+	z-index: 2;
+	filter: drop-shadow(rgb(151, 151, 151) 1rem 1rem 10px);
+}
+
+/* -- postcard -- */
+#sticker {
+	position: absolute;
+	z-index: 4;
+	right: -80px;
+	bottom: 0px;
+	filter: drop-shadow(rgb(151, 151, 151) 0.5rem 0.5rem 10px);
+}
+#postcard {
+	position: absolute;
+	z-index: 3;
+	rotate: 3deg;
+	filter: drop-shadow(rgb(151, 151, 151) 1rem 1rem 10px);
+}
+#tape {
+	position: absolute;
+	z-index: 5;
+	rotate: 3deg;
+	left: 280px;
+	top: -7px;
+	filter: drop-shadow(rgb(151, 151, 151) 0.1rem 0.1rem 3px);
 }
