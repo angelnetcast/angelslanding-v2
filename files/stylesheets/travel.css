@@ -82,7 +82,7 @@ h3 {
 	position: absolute;
 	z-index: 9;
 	bottom: 50px;
-	right: 155px;
+	right: 50px;
 	rotate: 6deg;
 	filter: drop-shadow(rgba(0, 0, 0, 0.294) 0.3rem 0.3rem 5px);
 }
@@ -91,7 +91,7 @@ h3 {
 	position: absolute;
 	z-index: 10;
 	top: 115px;
-	right: 295px;
+	right: 200px;
 	rotate: 2deg;
 	filter: drop-shadow(rgba(0, 0, 0, 0.294) 0.3rem 0.3rem 5px);
 }
