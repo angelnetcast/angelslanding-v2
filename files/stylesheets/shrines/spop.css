@@ -1,0 +1,189 @@
+/* ---------------------------- spop stylesheet ---------------------------- */
+
+/* -------------- colors -------------- */
+:root {
+	/* ----- she-ra ----- */
+	--purple: #750c8d;
+	--magenta: #de29a6;
+	--orange: #fd7e0d;
+	--goldenrod: #ffc810;
+	--yellow: #ffdf06;
+	/* ----- grayscale ----- */
+	--black: #171717;
+	--white: #ffffff;
+}
+
+/* -------------- fonts -------------- */
+@font-face {
+	font-family: shera;
+	src: url("/assets/fonts/shera.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* -------------- main layout -------------- */
+html {
+	background-image: url(/assets/images/shrines/spop/skybg.PNG);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body {
+	width: 1080px;
+	box-shadow: 10px 10px 25px var(--black);
+	color: var(--purple);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* -------------- container -------------- */
+.container {
+	background-color: var(--white);
+	padding: 20px;
+	text-align: center;
+}
+
+/* -------------- text decoration -------------- */
+
+/* ----- heading colors ----- */
+h1,
+h2 {
+	font-family: shera;
+	color: var(--magenta);
+	background: -webkit-linear-gradient(var(--magenta), var(--yellow));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 30px;
+}
+
+/* ----- highlighted text ----- */
+::selection {
+	color: var(--purple);
+	background: var(--goldenrod);
+}
+
+/* -------------- links -------------- */
+a {
+	text-decoration-style: dotted;
+}
+
+a:link {
+	color: var(--magenta);
+}
+
+a:visited {
+	color: var(--orange);
+}
+
+a:hover {
+	color: var(--yellow);
+}
+
+/* -------------- emphasis -------------- */
+mark {
+	background-color: var(--goldenrod);
+	color: var(--purple);
+}
+
+b {
+	color: var(--magenta);
+}
+
+u {
+	text-decoration-style: wavy;
+	text-decoration-color: var(--magenta);
+}
+
+/* ----- title ----- */
+/* style-my-tootltips plugin, tooltip styling */
+#s-m-t-tooltip {
+	/* basic */
+	max-width: 300px;
+	z-index: 10;
+	margin: 24px 14px 7px 12px;
+	/* style and design */
+	padding: 8px;
+	background: var(--purple);
+	/* fallback if rgba not supported */
+	background: var(--purple);
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	/*
+  -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15), -1px -1px 0 rgba(255, 255, 255, 0.3);
+  */
+	/* font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	color: var(--white);
+}
+
+.caption {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-color: var(--magenta);
+}
+
+/* -------------- positioning -------------- */
+.dynamic {
+	width: 1080px;
+	height: 600px;
+	position: relative;
+}
+/* -- background grass -- */
+#g1 {
+	position: absolute;
+	z-index: 3;
+}
+#g2 {
+	position: absolute;
+	z-index: 2;
+}
+#g3 {
+	position: absolute;
+	z-index: 1;
+}
+#cd {
+	position: absolute;
+	z-index: 4;
+    bottom: 10px;
+}
+#fgg {
+	/* -- i'm not saying slurs i promiseeeee -- */
+	position: absolute;
+	z-index: 5;
+	pointer-events: none;
+}
+#logo {
+	position: absolute;
+	z-index: 6;
+	left: 600px;
+	top: 50px;
+}
+
+/* -------------- animations -------------- */
+
+/* Grow */
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
