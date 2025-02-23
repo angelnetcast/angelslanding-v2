@@ -103,6 +103,7 @@ body {
 }
 #g14 {
 	grid-area: buttons;
+	text-align: center;
 }
 #g15 {
 	grid-area: footer;
