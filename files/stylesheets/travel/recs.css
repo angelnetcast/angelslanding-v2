@@ -42,7 +42,6 @@ body {
 }
 #g3 {
 	grid-area: f1;
-	height: 700px;
 }
 #g4 {
 	grid-area: e1;
@@ -54,7 +53,6 @@ body {
 }
 #g6 {
 	grid-area: f2;
-	height: 700px;
 }
 #g7 {
 	grid-area: e2;
@@ -105,4 +103,8 @@ h3 {
 	font-family: coolvetica;
 	letter-spacing: 1px;
 	font-style: italic;
+}
+
+.morepics {
+	width: 50px;
 }
