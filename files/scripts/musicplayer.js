@@ -23,6 +23,10 @@ let curr_track = document.getElementById("music");
 // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
 let track_list = [
 	{
+		name: "internet settings - 3ds",
+		path: "/assets/audio/3dsinternetsettings.mp3",
+	},
+	{
 		name: "system settings - dsi",
 		path: "/assets/audio/dsisystemsettings.mp3",
 	},
@@ -41,10 +45,6 @@ let track_list = [
 	{
 		name: "photo channel - wii",
 		path: "/assets/audio/wiiphotochannel.mp3",
-	},
-	{
-		name: "internet settings - 3ds",
-		path: "/assets/audio/3dsinternetsettings.mp3",
 	},
 ];
 //
