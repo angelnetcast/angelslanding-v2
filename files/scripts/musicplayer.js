@@ -27,10 +27,6 @@ let track_list = [
 		path: "/assets/audio/3dsinternetsettings.mp3",
 	},
 	{
-		name: "system settings - dsi",
-		path: "/assets/audio/dsisystemsettings.mp3",
-	},
-	{
 		name: "friend list (gamepad) - wii u",
 		path: "/assets/audio/wiiufriendlist-gamepad.mp3",
 	},
@@ -45,6 +41,10 @@ let track_list = [
 	{
 		name: "photo channel - wii",
 		path: "/assets/audio/wiiphotochannel.mp3",
+	},
+	{
+		name: "system settings - dsi",
+		path: "/assets/audio/dsisystemsettings.mp3",
 	},
 ];
 //
