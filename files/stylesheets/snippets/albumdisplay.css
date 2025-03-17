@@ -1,0 +1,28 @@
+/* -------------- grid -------------- */
+.album {
+	display: grid;
+	grid-template-areas: "cover detail";
+}
+
+.cover {
+	grid-area: cover;
+	padding: 10px;
+    height: 250px;
+}
+
+.details {
+	grid-area: detail;
+	height: 240px;
+	padding: 10px;
+	overflow: scroll;
+	overflow-x: hidden;
+	text-transform: lowercase;
+}
+
+.lyrics {
+	height: 240px;
+	padding: 10px;
+	overflow: scroll;
+	overflow-x: hidden;
+	text-transform: lowercase;
+}
