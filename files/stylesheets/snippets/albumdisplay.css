@@ -1,6 +1,6 @@
 /* -------------- grid -------------- */
 .album {
-	display: grid;
+	display: flex;
 	grid-template-areas: "cover detail";
 }
 
@@ -12,6 +12,7 @@
 
 .details {
 	grid-area: detail;
+	width: 100%;
 	height: 240px;
 	padding: 10px;
 	overflow: scroll;
