@@ -55,11 +55,9 @@ body {
 
 .g3{
     grid-area: footer;
+	text-align: center;
 }
 
-#spacer{
-    height: 700px;
-}
 
 /* -------------- animation -------------- */
 @keyframes background {
