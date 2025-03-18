@@ -11,6 +11,10 @@
 	/* ----- grayscale ----- */
 	--black: #171717;
 	--white: #ffffff;
+	/* ----- accents ----- */
+	--yellow: #f5ecb8;
+	--lightpink: #e6c6d6;
+	--pink: #d49cb4;
 }
 
 /* -------------- fonts -------------- */
