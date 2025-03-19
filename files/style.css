@@ -59,7 +59,6 @@ a:visited {
 
 a:hover {
 	color: var(--dark);
-	cursor: url("/media/images/favicons/sparklecursor.gif"), auto;
 }
 
 /* -------------- decoration -------------- */
