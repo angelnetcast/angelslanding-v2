@@ -59,7 +59,7 @@ body {
 }
 #g3 {
 	grid-area: webrings;
-	height: 700px;
+	height: 920px;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
