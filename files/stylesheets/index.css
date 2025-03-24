@@ -35,6 +35,13 @@ body {
 	margin: 5px;
 	text-align: center;
 }
+.credits {
+	background-color: var(--black);
+	border: 2px var(--white) solid;
+	box-shadow: 10px 10px 25px var(--black);
+	padding: 10px;
+	margin: 5px;
+}
 
 /* -------------- positioning -------------- */
 
