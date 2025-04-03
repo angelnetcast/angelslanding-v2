@@ -3,99 +3,123 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="author" content="Angel Valentine" />
-		<meta name="description" content="ANGEL'S LANDING v2 - COMPUTER MIIS" />
-		<meta name="keywords" content="Cute, Purple" />
+		<meta name="description" content="A guide to using the web Mii Maker." />
 		<link href="/style.css" rel="stylesheet" />
-		<title>ANGEL'S LANDING v2 - COMPUTER MIIS</title>
+		<link href="/stylesheets/blog.css" rel="stylesheet" />
+
+		<title>ANGEL'S BLOG - Computer Mii Maker</title>
 	</head>
 
 	<body>
-		<h1>Computer Mii Maker</h1>
-		<h3>How to make Miis on your computer and things you can do with it.</h3>
+		<div class="grid-cont">
+			<div class="grid-sec" id="g1">
+				<nav id="sidebar"></nav>
+			</div>
+			<div class="grid-sec" id="g2">
+				<main>
+					<h1>Computer Mii Maker</h1>
+					<h3>How to make Miis on your computer and things you can do with it.</h3>
 
-		<h2>Making A Mii on your Computer</h2>
-		<ol>
-			<li>
-				Log in on <a href="https://www.nintendo.com/">Nintendo's</a> website.
-			</li>
-			<li>
-				Go to <a href="https://accounts.nintendo.com/mii_studio">Mii Studio</a>
-			</li>
-			<li>Make a Mii and save it!</li>
-		</ol>
+					<h2>Making A Mii on your Computer</h2>
+					<ol>
+						<li>
+							Log in on <a href="https://www.nintendo.com/">Nintendo's</a> website.
+						</li>
+						<li>
+							Go to <a href="https://accounts.nintendo.com/mii_studio">Mii Studio</a>
+						</li>
+						<li>Make a Mii and save it!</li>
+					</ol>
 
-		<h2>Saving A Mii Headshot</h2>
-		<ol>
-			<li>
-				Go to <a href="https://accounts.nintendo.com/mii_studio">Mii Studio</a>
-			</li>
-			<li>Click outside of your browser to unfocus the application window</li>
-			<li>Right-click on the Mii</li>
-			<li>Save to computer</li>
-			<li><img src="/media/images/blog/mymii.png" width="100px" /></li>
-		</ol>
+					<h2>Saving A Mii Headshot</h2>
+					<ol>
+						<li>
+							Go to <a href="https://accounts.nintendo.com/mii_studio">Mii Studio</a>
+						</li>
+						<li>Click outside of your browser to unfocus the application window</li>
+						<li>Right-click on the Mii</li>
+						<li>Save to computer</li>
+						<li><img src="/media/images/blog/mymii.png" width="100px" /></li>
+					</ol>
 
-		<h2>Making a Spinning GIF of your Mii</h2>
-		<mark
-			>I am assuming you know how to find things inside divs in a website
-			here.</mark
-		>
-		<ol>
-			<li>
-				Go to <a href="https://accounts.nintendo.com/mii_studio">Mii Studio</a>
-			</li>
-			<li>Go to the editor of the Mii you want to spin around</li>
-			<li>Click Finish</li>
-			<li>Right-click your Mii and open inspect element</li>
-			<li>
-				Open div tags until you get to the image link of your Mii that looks like a
-				sprite sheet
-			</li>
-			<ul>
-				<li>
-					ex: <img src="/media/images/blog/mymii spritesheet.png" width="400px" />
-				</li>
-				<li>
-					The divs you want to open will highlight the Miis on the website as you are
-					selecting them. (On Chrome)
-				</li>
-			</ul>
-			<li>Save this image to your computer</li>
-			<ul>
-				<li>
-					<mark>OPTIONAL:</mark> Open the sprite sheet on your computer and resize it
-					ONLY using top and bottom sliders to make it smaller! (Only use the side
-					sliders if you can ensure both sides will be equal, this is essential for
-					the splitting step.)
-				</li>
-			</ul>
-			<li>
-				Upload your image to
-				<a href="https://imagy.app/split-image/">Split Your Image</a>
-			</li>
-			<li>Change your values to:</li>
-			<ul>
-				<li>How to split: vertically</li>
-				<li>Split vertically by: number of blocks</li>
-				<li>Quantity of vertical blocks: 4</li>
-				<li>
-					ex: <img src="/media/images/blog/eximagesettings.png" width="200px" />
-				</li>
-			</ul>
-			<li>Click process and download</li>
-			<li>
-				Upload these images to
-				<a href="https://ezgif.com/maker">Animated GIF Maker</a>
-			</li>
-			<li>Change the delay time to whatever you want</li>
-			<ul>
-				<li>
-					If your images are transparent, make sure to click the don’t stack frames
-					option under effects
-				</li>
-			</ul>
-			<li>Download your gif</li>
-			<li><img src="/media/images/blog/mymiispin.gif" width="100px" /></li>
-		</ol>
+					<h2>Making a Spinning GIF of your Mii</h2>
+					<mark
+						>I am assuming you know how to find things inside divs in a website
+						here.</mark
+					>
+					<ol>
+						<li>
+							Go to <a href="https://accounts.nintendo.com/mii_studio">Mii Studio</a>
+						</li>
+						<li>Go to the editor of the Mii you want to spin around</li>
+						<li>Click Finish</li>
+						<li>Right-click your Mii and open inspect element</li>
+						<li>
+							Open div tags until you get to the image link of your Mii that looks like
+							a sprite sheet
+						</li>
+						<ul>
+							<li>
+								ex: <img src="/media/images/blog/mymii spritesheet.png" width="400px" />
+							</li>
+							<li>
+								The divs you want to open will highlight the Miis on the website as you
+								are selecting them. (On Chrome)
+							</li>
+						</ul>
+						<li>Save this image to your computer</li>
+						<ul>
+							<li>
+								<mark>OPTIONAL:</mark> Open the sprite sheet on your computer and resize
+								it ONLY using top and bottom sliders to make it smaller! (Only use the
+								side sliders if you can ensure both sides will be equal, this is
+								essential for the splitting step.)
+							</li>
+						</ul>
+						<li>
+							Upload your image to
+							<a href="https://imagy.app/split-image/">Split Your Image</a>
+						</li>
+						<li>Change your values to:</li>
+						<ul>
+							<li>How to split: vertically</li>
+							<li>Split vertically by: number of blocks</li>
+							<li>Quantity of vertical blocks: 4</li>
+							<li>
+								ex: <img src="/media/images/blog/eximagesettings.png" width="200px" />
+							</li>
+						</ul>
+						<li>Click process and download</li>
+						<li>
+							Upload these images to
+							<a href="https://ezgif.com/maker">Animated GIF Maker</a>
+						</li>
+						<li>Change the delay time to whatever you want</li>
+						<ul>
+							<li>
+								If your images are transparent, make sure to click the don’t stack
+								frames option under effects
+							</li>
+						</ul>
+						<li>Download your gif</li>
+						<li><img src="/media/images/blog/mymiispin.gif" width="100px" /></li>
+					</ol>
+
+					<p><a href="/pages/blog.html">BACK?</a></p>
+				</main>
+			</div>
+		</div>
+		<script type="text/javascript" src="/scripts/sidebars/blog.js"></script>
 	</body>
+	<!--TOOLTIP STYLING-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/scripts/tooltips.js"></script>
+
+	<script>
+		(function ($) {
+			$(document).ready(function () {
+				$("[title]").style_my_tooltips();
+			});
+		})(jQuery);
+	</script>
 </html>

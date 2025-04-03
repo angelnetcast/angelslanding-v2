@@ -39,7 +39,7 @@ body {
 .grid-sec {
 	background-color: var(--black);
 	border: 2px var(--white) solid;
-    box-shadow: 10px 10px 25px var(--black);
+	box-shadow: 10px 10px 25px var(--black);
 	padding: 25px;
 	margin: 5px;
 }
@@ -47,9 +47,16 @@ body {
 /* -- indvidual sections -- */
 #g1 {
 	grid-area: nav;
+	width: 200px;
+	height: 600px;
+	overflow-y: scroll;
 }
+
 #g2 {
 	grid-area: content;
+	width: 900px;
+	height: 600px;
+	overflow-y: scroll;
 }
 
 /* -------------- animation -------------- */

@@ -3,72 +3,98 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="author" content="Angel Valentine" />
-		<meta name="description" content="ANGEL'S LANDING v2 - .MP4 TO PSP" />
-		<meta name="keywords" content="Cute, Purple" />
+		<meta
+			name="description"
+			content="A guide for transferring your favorite videos to your PlayStation Portable." />
 		<link href="/style.css" rel="stylesheet" />
-		<title>ANGEL'S LANDING v2 - .MP4 TO PSP</title>
+		<link href="/stylesheets/blog.css" rel="stylesheet" />
+
+		<title>ANGEL'S BLOG - How To Put Movies On Your PlayStation Portable</title>
 	</head>
 
 	<body>
-		<h1>How To Put Movies On Your PlayStation Portable</h1>
-		<h3>Because apparently you can’t just drag and drop them…</h3>
+		<div class="grid-cont">
+			<div class="grid-sec" id="g1">
+				<nav id="sidebar"></nav>
+			</div>
+			<div class="grid-sec" id="g2">
+				<main>
+					<h1>How To Put Movies On Your PlayStation Portable</h1>
+					<h3>Because apparently you can’t just drag and drop them…</h3>
 
-		<h2>What you Need</h2>
-		<ul>
-			<li>Your .mp4 file</li>
-			<li><a href="https://handbrake.fr/">Handbrake</a></li>
-			<li>
-				<a
-					href="https://drive.google.com/file/d/1HHtBW7zhtuyPnri32oeh4aFh3qFWKO-g/view?usp=sharing"
-					>This preset file</a
-				>
-				(<a
-					href="https://web.archive.org/web/20240712152015/https://davidcraddock.net/2022/10/16/psp-preset-for-handbrake-for-transcoding-video-files-into-a-psp-compatible-format/psp-2/"
-					>Original Source</a
-				>)
-			</li>
-		</ul>
+					<h2>What you Need</h2>
+					<ul>
+						<li>Your .mp4 file</li>
+						<li><a href="https://handbrake.fr/">Handbrake</a></li>
+						<li>
+							<a
+								href="https://drive.google.com/file/d/1HHtBW7zhtuyPnri32oeh4aFh3qFWKO-g/view?usp=sharing"
+								>This preset file</a
+							>
+							(<a
+								href="https://web.archive.org/web/20240712152015/https://davidcraddock.net/2022/10/16/psp-preset-for-handbrake-for-transcoding-video-files-into-a-psp-compatible-format/psp-2/"
+								>Original Source</a
+							>)
+						</li>
+					</ul>
 
-		<h2>Guide</h2>
-		<ol>
-			<li>Download and install Handbrake</li>
-			<li>Open Handbrake</li>
-			<ul>
-				<li>
-					You may need an additional .net framework installed, make sure to install
-					that when it asks
-				</li>
-			</ul>
-			<li>
-				Import your folder of .mp4s or singular .mp4 on the “Source Selection”
-				screen
-			</li>
-			<li>
-				Once that has loaded, click Presets &gt; Import from File on the menu bar
-			</li>
-			<li>Import the psp.json saved from above</li>
-			<li>Look on the menu bar again and click Tools &gt; Preferences</li>
-			<li>Click the Output Files option on the left menu</li>
-			<li>Change the default file path and file format how you’d like</li>
-			<ul>
-				<li>
-					This changes where the process files go on your computer and the way they
-					are named respectively
-				</li>
-			</ul>
-			<li>Look back at the main application window</li>
-			<li>Change the preset field from the default to PSP</li>
-			<li>Look in the dropdown for Custom Presets &gt; PSP</li>
-			<li>Look at the action bar and click Add All</li>
-			<li>Click on the Queue button and review your settings</li>
-			<ul>
-				<li>
-					Make sure the Preset field says PSP or the files will be converted
-					incorrectly
-				</li>
-			</ul>
-			<li>Click Start queue</li>
-			<li>Wait for your videos to encode and you’re done!</li>
-		</ol>
+					<h2>Guide</h2>
+					<ol>
+						<li>Download and install Handbrake</li>
+						<li>Open Handbrake</li>
+						<ul>
+							<li>
+								You may need an additional .net framework installed, make sure to
+								install that when it asks
+							</li>
+						</ul>
+						<li>
+							Import your folder of .mp4s or singular .mp4 on the “Source Selection”
+							screen
+						</li>
+						<li>
+							Once that has loaded, click Presets &gt; Import from File on the menu bar
+						</li>
+						<li>Import the psp.json saved from above</li>
+						<li>Look on the menu bar again and click Tools &gt; Preferences</li>
+						<li>Click the Output Files option on the left menu</li>
+						<li>Change the default file path and file format how you’d like</li>
+						<ul>
+							<li>
+								This changes where the process files go on your computer and the way
+								they are named respectively
+							</li>
+						</ul>
+						<li>Look back at the main application window</li>
+						<li>Change the preset field from the default to PSP</li>
+						<li>Look in the dropdown for Custom Presets &gt; PSP</li>
+						<li>Look at the action bar and click Add All</li>
+						<li>Click on the Queue button and review your settings</li>
+						<ul>
+							<li>
+								Make sure the Preset field says PSP or the files will be converted
+								incorrectly
+							</li>
+						</ul>
+						<li>Click Start queue</li>
+						<li>Wait for your videos to encode and you’re done!</li>
+					</ol>
+
+					<p><a href="/pages/blog.html">BACK?</a></p>
+				</main>
+			</div>
+		</div>
+		<script type="text/javascript" src="/scripts/sidebars/blog.js"></script>
 	</body>
+	<!--TOOLTIP STYLING-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/scripts/tooltips.js"></script>
+
+	<script>
+		(function ($) {
+			$(document).ready(function () {
+				$("[title]").style_my_tooltips();
+			});
+		})(jQuery);
+	</script>
 </html>
