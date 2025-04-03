@@ -50,6 +50,8 @@ body {
 }
 #g2 {
 	grid-area: content;
+	height: 600px;
+	overflow-y: scroll;
 }
 
 /* -------------- animation -------------- */

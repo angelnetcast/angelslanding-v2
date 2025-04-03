@@ -18,45 +18,39 @@
 		<div class="grid-cont">
 			<!-- g1 - navigation links -->
 			<div class="grid-sec" id="g1">
-				<h1>navigation</h1>
-
-				<h2>2025</h2>
-				<ul>
-					<li>
-						<a href="/pages/diaries/25/01jan.html" target="content">january</a>
-					</li>
-					<li>
-						<a href="/pages/diaries/25/02feb.html" target="content">february</a>
-					</li>
-					<li>
-						<a href="/pages/diaries/25/03mar.html" target="content">march</a>
-					</li>
-				</ul>
-
-				<h2>2024</h2>
-				<ul>
-					<li><a href="/pages/diaries/24aug.html" target="content">august</a></li>
-					<li><a href="/pages/diaries/24sep.html" target="content">september</a></li>
-					<li><a href="/pages/diaries/24oct.html" target="content">october</a></li>
-					<li><a href="/pages/diaries/24nov.html" target="content">november</a></li>
-					<li><a href="/pages/diaries/24dec.html" target="content">december</a></li>
-				</ul>
-
-				<p>
-					<a href="/pages/home.html">HOME?</a>
-				</p>
+				<nav id="sidebar"></nav>
 			</div>
 
 			<!-- g2 - entry display -->
 			<div class="grid-sec" id="g2">
-				<iframe
-					src="/pages/diaries/landingpage.html"
-					title="Selected Diary Entry"
-					name="content"
-					height="900px"
-					width="770px"
-					frameborder="0"></iframe>
+				<h1>angel's diary</h1>
+				<p>
+					i talk about my life and try not to overshare lol. not very interesting,
+					but it's a good way for me to remember what's happening day-to-day.
+				</p>
+				<p>
+					some things may require content warnings, which will be listed at the top
+					of the entry. had to add this disclaimer because i may talk about world
+					events and that's a little sucky... anything before 2025 is safe though!
+				</p>
+				<p>
+					<a href="/pages/home.html">HOME?</a>
+				</p>
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="/scripts/sidebars/diary.js"></script>
+	<!--TOOLTIP STYLING-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/scripts/tooltips.js"></script>
+
+	<script>
+		(function ($) {
+			$(document).ready(function () {
+				$("[title]").style_my_tooltips();
+			});
+		})(jQuery);
+	</script>
 </html>
+
+

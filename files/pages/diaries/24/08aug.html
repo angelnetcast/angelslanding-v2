@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!---->
 		<meta charset="utf-8" />
 		<meta name="author" content="Angel Valentine" />
-		<meta name="description" content="ANGEL'S LANDING v2 - DIARY" />
-		<meta name="keywords" content="Cute, Purple" />
+		<meta
+			name="description"
+			content="August 2024 - Angel's diary, the place where I discuss my personal life in vague terms (usually...)" />
 		<link href="/style.css" rel="stylesheet" />
-		<title>ANGEL'S LANDING v2 - AUGUST 2024</title>
+		<link href="/stylesheets/diary.css" rel="stylesheet" />
+
+		<title>ANGEL'S DIARY - August 2024</title>
 	</head>
 
 	<body>
+		<!-- grid container -->
+		<div class="grid-cont">
+			<!-- g1 - navigation links -->
+			<div class="grid-sec" id="g1">
+				<nav id="sidebar"></nav>
+			</div>
+
+			<!-- g2 - entry display -->
+			<div class="grid-sec" id="g2">
+				<main>
+                
 		<h1>august 2024</h1>
 
 		<div class="entry" id="083024">
@@ -262,9 +277,17 @@
 				i'm going to go to sleep now -v-
 			</p>
 		</div>
-	</body>
+	
 
-	<!--TOOLTIP STYLING-->
+                <p>
+					<a href="/pages/diary.html">BACK?</a>
+				</p>
+                </main>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="/scripts/sidebars/diary.js"></script>
+    <!--TOOLTIP STYLING-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="/scripts/tooltips.js"></script>
 
@@ -276,3 +299,5 @@
 		})(jQuery);
 	</script>
 </html>
+
+
