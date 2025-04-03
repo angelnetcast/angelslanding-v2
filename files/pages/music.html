@@ -8,50 +8,110 @@
 			content="Angel talks about his favorite artists, songs, and his occasional personal music projects." />
 		<link href="/style.css" rel="stylesheet" />
 		<link href="/stylesheets/music.css" rel="stylesheet" type="text/css" />
-		<title>ANGEL'S LANDING v2 - MUSIC</title>
+		<title>ANGEL'S MUSIC - MY MUSIC</title>
 	</head>
 
 	<body>
 		<div class="grid-container">
 			<div class="g1">
-				<p>
-					<a href="/pages/music/mymusic.html" target="content">my music</a>
-					<br />
-					<a href="/pages/music/albums.html" target="content">album review</a>
-					<br />
-					<a href="/pages/music/collection.html" target="content"
-						>physical collection</a
-					>
-					<br />
-					<a href="/pages/music/sotmarchive.html" target="content">archive</a>
-				</p>
-
-				<p><a href="/pages/home.html">home?</a></p>
+				<nav id="sidebar"></nav>
 			</div>
 
 			<div class="g2">
-				<div class="frame">
-					<iframe
-						src="/pages/music/mymusic.html"
-						height="900"
-						width="900px"
-						title="Selected Music Page"
-						name="content"
-						frameborder="0"></iframe>
-				</div>
+				<main>
+					<h1>my music</h1>
+					<p>
+						during middle school i made music in garageband. using liveloops to make
+						an album (which i still have! archive your stuff!!) was my introduction to
+						"making music". i don't make music that much anymore, because i have a
+						hard time creating something i like.
+					</p>
+					<p>
+						every once-in-a-while, i get an idea for a song. if i make something
+						decent, i'll upload it to soundcloud and link it here. been trying to make
+						a bossa nova song for ages, i have a cute concept to make an ep out of
+						bunny robot song.
+					</p>
+
+					<div id="songs">
+						<h1>full songs</h1>
+						<p>
+							<b>a lullaby for a princess (bunny robot song)</b> - cyberangel
+							<br />
+							i made this song for a class at school. it is very robotic and simple
+							because i was focused on the melody.
+						</p>
+						<p>
+							<b>story:</b> in a floating castle not too far from here resides a bunny
+							robot. she is old and nearly nonfunctional, but sometimes you can hear
+							her gentle melody floating down to greet you. it is said that long ago
+							she was the caretaker of the children residing in that castle, before it
+							rose from the ground. in the heights of their reign, the royal family had
+							supported all kinds of creative endeavours favored by their subjects.
+							they were the most colorful and technologically advanced kingdom for
+							miles. unfortunately, this mighty kingdom fell. no one knows why, but all
+							of the residents had dissappeared and the castle began to float into the
+							sky. all of the robots and art were left behind. one-by-one, the art
+							decayed and the robots deactivated. the only thing left is the bunny
+							robot, singing her calm melody until her last moments.
+						</p>
+
+						<div class="lullaby">
+							<iframe
+								width="100%"
+								height="166"
+								scrolling="no"
+								frameborder="no"
+								allow="autoplay"
+								src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1642520820%3Fsecret_token%3Ds-h7awQbfCNez&color=%23060606&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+							<div
+								style="
+									font-size: 10px;
+									color: #cccccc;
+									line-break: anywhere;
+									word-break: normal;
+									overflow: hidden;
+									white-space: nowrap;
+									text-overflow: ellipsis;
+									font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+										Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+									font-weight: 100;
+								">
+								<a
+									href="https://soundcloud.com/angelnetcast"
+									title="cyberangel"
+									target="_blank"
+									style="color: #cccccc; text-decoration: none"
+									>cyberangel</a
+								>
+								·
+								<a
+									href="https://soundcloud.com/angelnetcast/a-lullaby-for-a-princess/s-h7awQbfCNez"
+									title="A Lullaby For A Princess (Bunny Robot Song)"
+									target="_blank"
+									style="color: #cccccc; text-decoration: none"
+									>A Lullaby For A Princess (Bunny Robot Song)</a
+								>
+							</div>
+						</div>
+					</div>
+
+					<div id="covers">
+						<h1>covers</h1>
+						<p>
+							i enjoy singing a lot but i hate hearing my voice on recording. i used to
+							sing during my livestreams but my computer can't handle streaming
+							anymore. whenever i get a new computer, or i can tolerate hearing my
+							voice played back, i'll upload something here.
+						</p>
+					</div>
+				</main>
 			</div>
 
 			<div class="g3">
-				<p>
-					find me at:
-					<br />
-					<a href="https://rateyourmusic.com/~angelnetcast">rate your music</a>
-					|
-					<a href="https://soundcloud.com/angelnetcast">soundcloud</a>
-					|
-					<a href="https://www.last.fm/user/angelnetcast">last.fm</a>
-				</p>
+				<footer id="footer"></footer>
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="/scripts/sidebars/music.js"></script>
 </html>

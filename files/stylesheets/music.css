@@ -26,38 +26,42 @@ body {
 }
 
 /* -------------- grid -------------- */
-.grid-container{
-    display: grid;
-    grid-template-areas:
-    'nav stuff stuff stuff stuff'
-    'nav stuff stuff stuff stuff'
-    'footer footer footer footer footer'
-    ;
+.grid-container {
+	display: grid;
+	grid-template-areas:
+		"nav stuff stuff stuff stuff"
+		"nav stuff stuff stuff stuff"
+		"footer footer footer footer footer";
 }
 
-.grid-container>div {
-   background-color: var(--black);
+.grid-container > div {
+	background-color: var(--black);
 	border: 2px var(--white) solid;
-    box-shadow: 10px 10px 25px var(--black);
+	box-shadow: 10px 10px 25px var(--black);
 	padding: 25px;
 	margin: 5px;
 }
 
-.g1{
-    grid-area: nav;
-    width: 130px;
+.g1 {
+	grid-area: nav;
+	width: 130px;
 }
 
-.g2{
-    grid-area: stuff;
-    width: 900px;
+.g2 {
+	grid-area: stuff;
+	width: 900px;
+	height: 600px;
+	overflow-y: scroll;
 }
 
-.g3{
-    grid-area: footer;
+.g3 {
+	grid-area: footer;
 	text-align: center;
 }
 
+.box {
+	display: flex;
+}
 
 /* -------------- animation -------------- */
 @keyframes background {
@@ -68,4 +72,3 @@ body {
 		background-position: 307px 133px;
 	}
 }
-
