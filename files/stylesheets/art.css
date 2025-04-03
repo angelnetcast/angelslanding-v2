@@ -24,10 +24,6 @@ html {
 }
 
 body {
-	width: 950px;
-    position: relative;
-	margin-left: auto;
-	margin-right: auto;
 }
 /* -------------- container -------------- */
 .container {
@@ -38,7 +34,12 @@ body {
 	margin: 5px;
 	text-align: center;
 }
-
+main {
+	width: 950px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
 /* -------------- animation -------------- */
 @keyframes background {
 	0% {
@@ -49,40 +50,39 @@ body {
 	}
 }
 
-
 /***
 EZ Gallery by netfriend - https://netfriend.neocities.org/ez-gallery/
 Released under the Unlicense - https://unlicense.org/
 ***/
 
-.ezgallery.montage { 
+.ezgallery.montage {
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-  }
-  
-  .ezgallery.montage img {
+}
+
+.ezgallery.montage img {
 	flex: auto;
 	margin: 0 5px 5px 0;
 	object-fit: contain;
 	object-position: bottom;
-  }
-  
-  .ezgallery.horizontal { 
+}
+
+.ezgallery.horizontal {
 	display: grid;
 	grid-gap: 5px;
 	gap: 5px;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	grid-auto-rows: minmax(200px, auto);
-  }
-  
-  .ezgallery.horizontal a {
+}
+
+.ezgallery.horizontal a {
 	text-align: center;
-  }
-  
-  .ezgallery.horizontal img {
+}
+
+.ezgallery.horizontal img {
 	text-align: center;
 	vertical-align: middle;
 	margin: 0 5px 5px 0;
@@ -90,4 +90,4 @@ Released under the Unlicense - https://unlicense.org/
 	max-height: 200px;
 	object-fit: contain;
 	object-position: bottom;
-  }
+}
