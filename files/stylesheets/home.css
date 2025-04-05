@@ -56,6 +56,7 @@ html {
 /* -- indvidual sections -- */
 #g1 {
 	grid-area: banner;
+	text-align: center;
 }
 #g2 {
 	grid-area: blurb;
