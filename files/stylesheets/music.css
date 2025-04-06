@@ -18,12 +18,6 @@ html {
 	background-image: url(/assets/images/backgrounds/grid.png);
 	animation: background 12s infinite linear; /* sometimes i comment this bc the moving background kills my laptop live preview. if ur snoopin in the code and see this off, remind me 2 turn it back on lol */
 }
-body {
-	width: 1200px;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 /* -------------- grid -------------- */
 .grid-container {
@@ -32,6 +26,10 @@ body {
 		"nav stuff stuff stuff stuff"
 		"nav stuff stuff stuff stuff"
 		"footer footer footer footer footer";
+	width: 1200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .grid-container > div {
@@ -49,7 +47,6 @@ body {
 
 .g2 {
 	grid-area: stuff;
-	width: 900px;
 	height: 600px;
 	overflow-y: scroll;
 }
