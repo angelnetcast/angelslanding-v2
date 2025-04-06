@@ -4,49 +4,49 @@
 
 /* -------------- colors -------------- */
 :root {
-  /* ----- purples ----- */
-  --dark: #2301a9;
-  --mediumdark: #3810d1;
-  --medium: #9985e8;
-  --mediumlight: #b6a8ef;
-  --light: #d6cef6;
-  /* ----- grayscale ----- */
-  --black: #171717;
-  --white: #ffffff;
+	/* ----- purples ----- */
+	--dark: #2301a9;
+	--mediumdark: #3810d1;
+	--medium: #9985e8;
+	--mediumlight: #b6a8ef;
+	--light: #d6cef6;
+	/* ----- grayscale ----- */
+	--black: #171717;
+	--white: #ffffff;
 }
 
 /* -------------- main layout -------------- */
 html {
-  background-image: url(/assets/images/backgrounds/grid.png);
-  animation: background 12s infinite linear; /* sometimes i comment this bc the moving background kills my laptop live preview. if ur snoopin in the code and see this off, remind me 2 turn it back on lol */
-  color: var(--light);
-  font-family: nds;
-  font-size: 20px;
-  line-height: 1;
+	background-image: url(/assets/images/backgrounds/grid.png);
+	animation: background 12s infinite linear; /* sometimes i comment this bc the moving background kills my laptop live preview. if ur snoopin in the code and see this off, remind me 2 turn it back on lol */
+	color: var(--light);
+	font-family: nds;
+	font-size: 20px;
+	line-height: 1;
 }
 
 body {
-  width: 1500px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
 }
 /* -------------- container -------------- */
 .container {
-  background-color: var(--black);
-  border: 2px var(--white) solid;
-  box-shadow: 10px 10px 25px var(--black);
-  padding: 10px;
-  margin: 5px;
-  text-align: center;
+	background-color: var(--black);
+	border: 2px var(--white) solid;
+	box-shadow: 10px 10px 25px var(--black);
+	padding: 10px;
+	margin: 5px;
+	text-align: center;
+	width: 1500px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* -------------- animation -------------- */
 @keyframes background {
-  0% {
-    background-position: 0px 0px;
-  }
-  100% {
-    background-position: 307px 133px;
-  }
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: 307px 133px;
+	}
 }
