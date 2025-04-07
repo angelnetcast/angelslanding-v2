@@ -27,7 +27,7 @@
 
 /* -------------- emphasis -------------- */
 mark {
-	background-color: #d6cef6;
+	background-color: var(--light);
 	color: var(--black);
 }
 
@@ -122,7 +122,7 @@ td {
 	padding: 8px;
 	background: var(--light);
 	/* fallback if rgba not supported */
-	background: #d6cef6eb;
+	background: var(--light);
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
