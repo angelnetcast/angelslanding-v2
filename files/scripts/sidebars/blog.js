@@ -4,7 +4,7 @@ const sidebar = `
 					<div class="ehead">
 						<h3>
 							<a href="/pages/blogs/ns2direct.html" 
-								>my thoughts on the nintendo switch 2</a
+								>&#9734; NEW - my thoughts on the nintendo switch 2</a
 							>
 						</h3>
 					</div>
@@ -30,6 +30,20 @@ const sidebar = `
 				<div class="entry">
 					<div class="ehead">
 						<h3>
+							<a href="/pages/blogs/accessibility.html" 
+								>&#9734; NEW - the angel's landing accessibility effort</a
+							>
+						</h3>
+					</div>
+					<div class="edesc">
+						<p>
+							the web is for everyone!
+						</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="ehead">
+						<h3>
 							<a href="/pages/blogs/pocketpc.html" 
 								>finding a use for the pocket pc 2004</a
 							>
@@ -46,7 +60,7 @@ const sidebar = `
 					<div class="ehead">
 						<h3>
 							<a href="/pages/blogs/vmsetup.html" 
-								>&#9734; NEW - my virtural machines (and other old stuff)</a
+								>my virtural machines (and other old stuff)</a
 							>
 						</h3>
 					</div>
