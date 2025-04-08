@@ -35,7 +35,7 @@ body {
 	margin: 5px;
 	text-align: center;
 }
-.credits {
+.impcontainer {
 	background-color: var(--black);
 	border: 2px var(--white) solid;
 	box-shadow: 10px 10px 25px var(--black);

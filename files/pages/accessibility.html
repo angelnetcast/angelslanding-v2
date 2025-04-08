@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Angel Valentine" />
+		<meta
+			name="description"
+			content="List of accesibility methods the site should meet." />
+		<link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/stylesheets/index.css" rel="stylesheet" />
+		<title>ANGEL'S LANDING v2 - ACCESSIBILITY</title>
+	</head>
+
+	<body>
+		<div class="impcontainer">
+			<h1>accessibility</h1>
+			<p>
+				this page will be completed when i have finished making the current site more accessible. please stand by!
+			</p>
+
+			<p><a href="/pages/home.html">HOME?</a></p>
+		</div>
+	</body>
+	<!--TOOLTIP STYLING-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/scripts/tooltips.js"></script>
+
+	<script>
+		(function ($) {
+			$(document).ready(function () {
+				$("[title]").style_my_tooltips();
+			});
+		})(jQuery);
+	</script>
+</html>
