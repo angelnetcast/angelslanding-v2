@@ -9,6 +9,8 @@ const sidebar = `
 					>
 					<br />
 					<a href="/pages/music/sotmarchive.html" >archive</a>
+					<br>
+					<a href="/pages/music/cdworld.html" >CDwORLD</a>
 				</p>
 				
 `;
