@@ -54,7 +54,7 @@ a:link {
 }
 
 a:visited {
-	color: var(--lightpink);
+	color: var(--light);
 }
 
 a:hover {
