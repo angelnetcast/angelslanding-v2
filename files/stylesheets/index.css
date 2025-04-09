@@ -3,7 +3,7 @@
 /* -------------- main layout -------------- */
 html {
 	background-image: url(/assets/images/backgrounds/grid.png);
-	animation: background 12s infinite linear; /* sometimes i comment this bc the moving background kills my laptop live preview. if ur snoopin in the code and see this off, remind me 2 turn it back on lol */
+	animation: background 12s infinite linear; /* sometimes i comment this bc it makes it easier to code. if ur snoopin around and see this off, remind me 2 turn it back on lol */
 	color: var(--light);
 	font-family: nds;
 	font-size: 20px;
@@ -22,6 +22,7 @@ body {
 }
 
 .text {
+	background-color: #1d1d1d; /* usually all colors are defined as variables but this is specifically similar to the 3ds bg color for accessibility reasons */
 	width: 270px;
 	height: 160px;
 	overflow-y: scroll;
@@ -98,8 +99,8 @@ body {
 	position: absolute;
 	z-index: 5;
 	right: 170px;
-	top: 380px;
-	rotate: 11deg;
+	top: 385px;
+	rotate: 12deg;
 	text-align: center;
 }
 
