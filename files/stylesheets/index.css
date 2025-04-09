@@ -73,7 +73,6 @@ body {
 	position: absolute;
 	z-index: 4;
 	left: -205px;
-	pointer-events: none;
 	filter: drop-shadow(rgba(0, 0, 0, 0.294) 0.3rem 0.3rem 5px);
 }
 

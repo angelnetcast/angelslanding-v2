@@ -21,6 +21,7 @@
   padding: 5px; /* padding around song title */
   /* border-bottom: 2px solid #e74492;  border under song title */
   display: block;
+  color: var(--black);
 }
 
 .controls {
