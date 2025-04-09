@@ -35,7 +35,7 @@ body {
 		"intro intro buttons buttons"
 		"webrings webrings sites sites"
 		"codelinks codelinks graphics graphics"
-		"codehelp codehelp graphics graphics"
+		"codehelp codehelp pixels pixels"
 		"games games artlinks consoles"
 		"games games misc consoles";
 	padding: 10px;
@@ -86,6 +86,9 @@ body {
 }
 #g11 {
 	grid-area: sites;
+}
+#g12{
+	grid-area: pixels;
 }
 
 /* -------------- animation -------------- */
