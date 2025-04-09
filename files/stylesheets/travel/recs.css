@@ -19,11 +19,10 @@ body {
 .grid-cont {
 	display: grid;
 	grid-template-areas:
-		"title title title title"
-		"h1 h1 h1 h1"
-		"f1 f1 e1 e1"
-		"h2 h2 h2 h2"
-		"f2 f2 e2 e2";
+		"title h1 h1 h1 h1"
+		"title f1 f1 e1 e1"
+		"title h2 h2 h2 h2"
+		"title f2 f2 e2 e2";
 	padding: 10px;
 }
 
@@ -35,6 +34,7 @@ body {
 /* -- indvidual sections -- */
 #g1 {
 	grid-area: title;
+	width: 250px;
 }
 #g2 {
 	grid-area: h1;
