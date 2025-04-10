@@ -34,7 +34,7 @@ body {
 /* -- indvidual sections -- */
 #g1 {
 	grid-area: title;
-	width: 250px;
+	width: 300px;
 }
 #g2 {
 	grid-area: h1;
@@ -104,7 +104,11 @@ h3 {
 	letter-spacing: 1px;
 	font-style: italic;
 }
-
+/*makes sure all cover images are one size */
+.e-g1 > img {
+	width: 400px;
+	height: 300px;
+}
 .morepics {
 	width: 50px;
 }
