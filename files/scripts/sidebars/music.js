@@ -4,6 +4,8 @@ const sidebar = `
 					<br />
 					<a href="/pages/music/albums.html" >album review</a>
 					<br />
+					<a href="/pages/music/catalog.html" >catalog</a>
+					<br>
 					<a href="/pages/music/collection.html" 
 						>physical collection</a
 					>

@@ -59,6 +59,13 @@ html {
 	display: flex;
 }
 
+/* -------------- subpages -------------- */
+
+/* --- catalog --- */
+.catalog > img {
+	width:100px;
+}
+
 /* -------------- animation -------------- */
 @keyframes background {
 	0% {
