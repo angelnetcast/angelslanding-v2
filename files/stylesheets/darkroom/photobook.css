@@ -1,0 +1,17 @@
+.photobook > img {
+	width: 200px;
+}
+
+.photobook:has(input:checked) img {
+	display: none;
+}
+.photobook:has(#all:checked) img {
+	display: inline-block;
+}
+.photobook:has(#iphone12:checked) img[class~="iphone12"] {
+	display: inline-block;
+}
+.photobook:has(#sanyo:checked) img[class~="sanyo"] {
+	display: inline-block;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- git plssss update -->
+		<meta name="author" content="Angel Valentine" />
+		<meta name="description" content="" />
+		<link href="/stylesheets/darkroom/photobook.css" rel="stylesheet" />
+
+		<title>ANGEL'S LANDING v2 - PHOTOBOOK</title>
+	</head>
+
+	<body>
+		<main>
+			<h1>the photobook</h1>
+			<p>
+				hey everypony! have this absolutely shitass styled page while i work on some
+				shit so we can finally have <i>the photo book</i> that i've been talking
+				about for god knows how long (lol). once i get this up and running ill set
+				it so you can sort by camera type, location, whatever what my face. dont
+				care eat shit look pitchers live life love everyone. anyway.
+			</p>
+			<p>
+				YALL DON'T KNOW HOW LONG THIS SHIT TOOK ME. don't be stupid like me that's
+				my coding life hack.
+				<a href="https://solaria.neocities.org/guides/cssfilter"
+					>here's what i used to set up the stupid filter</a
+				>. i tried to do the js version but i'm stupid and not a very stick-to-it
+				person so i gave up lolllll. anyway excuse the mess for the coming god knows
+				how long
+			</p>
+			<article>
+				<div class="photobook">
+					<div class="buttons">
+						<label>
+							<input type="radio" id="all" name="piclog" />
+							all
+						</label>
+						<label>
+							<input type="radio" id="iphone12" name="piclog" />
+							iphone 12
+						</label>
+						<label>
+							<input type="radio" id="sanyo" name="piclog" />
+							sanyo
+						</label>
+					</div>
+
+					<img
+						class="iphone12 travel event al"
+						src="/assets/images/photobook/kamiconkatamari.jpg" />
+
+					<img
+						class="sanyo travel al"
+						src="/assets/images/photobook/seniorsunrisedrive-sanyo.JPG" />
+
+					<img
+						class="iphone12 travel ca"
+						src="/assets/images/photobook/travel/usa/california/patscafe-sf.jpeg" />
+				
+                <img
+						class="iphone12 travel ca"
+						src="/assets/images/photobook/travel/usa/california/patscafe-sf.jpeg" />
+				
+                </div>
+			</article>
+		</main>
+	</body>
+	<!--TOOLTIP STYLING-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/scripts/tooltips.js"></script>
+
+	<script>
+		(function ($) {
+			$(document).ready(function () {
+				$("[title]").style_my_tooltips();
+			});
+		})(jQuery);
+	</script>
+</html>
