@@ -4,7 +4,7 @@ const sidebar = `
 					<div class="ehead">
 						<h3>
 							<a href="/pages/blogs/ns2direct.html" 
-								>&#9734; NEW - my thoughts on the nintendo switch 2</a
+								>my thoughts on the nintendo switch 2</a
 							>
 						</h3>
 					</div>
@@ -26,12 +26,24 @@ const sidebar = `
 						<p>my "technically" first concert!</p>
 					</div>
 				</div>
+				<div class="entry">
+					<div class="ehead">
+						<h3>
+							<a href="/pages/blogs/pokesona.html" 
+								>&#9734; NEW - the pokesona analysis</a
+							>
+						</h3>
+					</div>
+					<div class="edesc">
+						<p>trying to decide on a pokesona...</p>
+					</div>
+				</div>
 				<h2>projects</h2>
 				<div class="entry">
 					<div class="ehead">
 						<h3>
 							<a href="/pages/blogs/accessibility.html" 
-								>&#9734; NEW - the angel's landing accessibility effort</a
+								>the angel's landing accessibility effort</a
 							>
 						</h3>
 					</div>
