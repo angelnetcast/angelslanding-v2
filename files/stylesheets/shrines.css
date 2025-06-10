@@ -25,6 +25,13 @@ html {
 	line-height: 1;
 }
 
+/* -------- splatfest table hotfix -------- */
+
+.splatfest-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* -------------- container -------------- */
 .container {
 	background-color: var(--black);
