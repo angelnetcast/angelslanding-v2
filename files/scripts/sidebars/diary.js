@@ -8,6 +8,7 @@ const sidebar = `
 				<li><a href="/pages/diaries/25/03mar.html">march</a></li>
 				<li><a href="/pages/diaries/25/04apr.html">april</a></li>
 				<li><a href="/pages/diaries/25/05may.html">may</a></li>
+				<li><a href="/pages/diaries/25/06jun.html">june</a></li>
 			</ul>
 
 			<h2>2024</h2>
