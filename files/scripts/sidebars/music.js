@@ -13,6 +13,8 @@ const sidebar = `
 					<a href="/pages/music/sotmarchive.html" >archive</a>
 					<br>
 					<a href="/pages/music/cdworld.html" >CDwORLD</a>
+					<br>
+					<a href="/pages/music/piano.html" >piano</a>
 				</p>
 				
 `;
