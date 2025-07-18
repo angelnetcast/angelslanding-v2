@@ -26,9 +26,13 @@ const footer = `
 <p>
 	find me at:
 	<br />
-	<a href="https://rateyourmusic.com/~angelnetcast">rate your music</a>|
-	<a href="https://soundcloud.com/angelnetcast">soundcloud</a>|
+	<a href="https://rateyourmusic.com/~angelnetcast">rate your music</a>
+	|
+	<a href="https://soundcloud.com/angelnetcast">soundcloud</a>
+	|
 	<a href="https://www.last.fm/user/angelnetcast">last.fm</a>
+	|
+	<a href="https://angelnetcast.bandcamp.com/">bandcamp</a>
 </p>
 				
 `;
