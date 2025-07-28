@@ -88,6 +88,11 @@ body {
 	grid-area: pixels;
 }
 
+/* -------------- button settings -------------- */
+#g11 img {
+	width: 88px;
+}
+
 /* -------------- animation -------------- */
 @keyframes background {
 	0% {
