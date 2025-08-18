@@ -37,7 +37,7 @@ html {
 .grid-sec {
 	background-color: var(--black);
 	border: 2px var(--white) solid;
-    box-shadow: 10px 10px 25px var(--black);
+	box-shadow: 10px 10px 25px var(--black);
 	padding: 25px;
 	margin: 5px;
 }
@@ -50,6 +50,29 @@ html {
 	grid-area: content;
 	height: 600px;
 	overflow-y: scroll;
+}
+
+/* -- manga covers -- */
+.covers {
+	display: flex;
+	flex-wrap: wrap;
+}
+.entry {
+	display: flex;
+	width: 350px;
+	padding: 5px;
+}
+.entry > img {
+	width: 150px;
+	padding-right: 10px;
+}
+.entry > details {
+	height: 200px;
+	overflow-y: scroll;
+}
+
+hr{
+	size: 5px;
 }
 
 /* -------------- animation -------------- */
